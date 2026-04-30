@@ -4,18 +4,32 @@ import { SiteShell } from "../components/layout/SiteShell";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  ),
   title: {
     default: "Reinigungsservice Dali",
     template: "%s | Reinigungsservice Dali",
   },
   description:
-    "Premium cleaning services for homes and businesses in Germany.",
+    "Professional residential and commercial cleaning services in Goettingen with dependable, high-standard execution.",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Reinigungsservice Dali",
     description:
-      "Premium cleaning services for homes and businesses in Germany.",
+      "Professional residential and commercial cleaning services in Goettingen with dependable, high-standard execution.",
     locale: "de_DE",
     type: "website",
+    images: [{ url: "/hero-main.png", width: 1024, height: 768, alt: "Reinigungsservice Dali team at work" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Reinigungsservice Dali",
+    description:
+      "Professional residential and commercial cleaning services in Goettingen.",
+    images: ["/hero-main.png"],
   },
 };
 
@@ -36,7 +50,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "Reinigungsservice Dali",
-              image: "https://images.unsplash.com/photo-1603712725038-e9334ae8f39f",
+              image: "/hero-main.png",
               telephone: "+49 30 1234567",
               email: "hello@reinigung-dali.de",
               address: {

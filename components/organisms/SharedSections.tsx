@@ -49,7 +49,7 @@ export function PageIntroSection({
               alt={imageAlt ?? ""}
               width={800}
               height={560}
-              className="h-56 w-full object-cover md:h-64"
+              className="h-56 w-full object-cover md:h-72"
               sizes="(min-width: 768px) 50vw, 100vw"
             />
           </div>
@@ -63,7 +63,7 @@ export function AboutContentSection() {
   return (
     <Section className="bg-white">
       <div className="grid gap-8 md:grid-cols-3">
-        <article className="rounded-2xl bg-[#F7F9F8] p-6 md:p-8">
+        <article className="rounded-2xl border border-[#E3EFE5] bg-[#F7F9F8] p-6 md:p-8">
           <Typography as="h3" variant="h3" className="mb-4">
             Who We Are
           </Typography>
@@ -72,7 +72,7 @@ export function AboutContentSection() {
             premium-quality service for homes and businesses.
           </Typography>
         </article>
-        <article className="rounded-2xl bg-[#F7F9F8] p-6 md:p-8">
+        <article className="rounded-2xl border border-[#E3EFE5] bg-[#F7F9F8] p-6 md:p-8">
           <Typography as="h3" variant="h3" className="mb-4">
             Mission
           </Typography>
@@ -81,7 +81,7 @@ export function AboutContentSection() {
             transparent communication, and dependable execution.
           </Typography>
         </article>
-        <article className="rounded-2xl bg-[#F7F9F8] p-6 md:p-8">
+        <article className="rounded-2xl border border-[#E3EFE5] bg-[#F7F9F8] p-6 md:p-8">
           <Typography as="h3" variant="h3" className="mb-4">
             Values
           </Typography>
@@ -224,7 +224,7 @@ export function ContactSection() {
   return (
     <Section className="bg-white">
       <div className="grid gap-8 md:grid-cols-2 md:gap-12">
-        <article className="rounded-2xl bg-[#F7F9F8] p-6 md:p-8">
+        <article className="rounded-2xl border border-[#E3EFE5] bg-[#F7F9F8] p-6 md:p-8">
           <div className="mb-6 overflow-hidden rounded-2xl border border-[#CFF5D2]">
             <BrandedImage
               src={PHOTOS.contact}

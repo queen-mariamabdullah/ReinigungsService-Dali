@@ -18,12 +18,12 @@ type TypographyProps = {
 
 const variantClasses: Record<TypographyVariant, string> = {
   display:
-    "font-[var(--font-sora)] text-5xl font-bold leading-tight tracking-tight text-[#1A1A1A] md:text-6xl",
-  h1: "font-[var(--font-sora)] text-4xl font-bold leading-tight tracking-tight text-[#1A1A1A] md:text-5xl",
-  h2: "font-[var(--font-sora)] text-3xl font-semibold leading-tight text-[#1A1A1A] md:text-4xl",
-  h3: "font-[var(--font-sora)] text-2xl font-semibold leading-tight text-[#1A1A1A]",
-  body: "text-base leading-7 text-[#1A1A1A] md:text-lg",
-  bodyMuted: "text-base leading-7 text-[#6B7280] md:text-lg",
+    "font-[var(--font-display)] text-4xl font-bold leading-[1.1] tracking-tight text-[#1A1A1A] md:text-6xl",
+  h1: "font-[var(--font-display)] text-3xl font-bold leading-tight tracking-tight text-[#1A1A1A] md:text-5xl",
+  h2: "font-[var(--font-display)] text-2xl font-semibold leading-tight text-[#1A1A1A] md:text-4xl",
+  h3: "font-[var(--font-display)] text-xl font-semibold leading-tight text-[#1A1A1A] md:text-2xl",
+  body: "text-base leading-7 text-[#1A1A1A] md:text-[1.05rem]",
+  bodyMuted: "text-base leading-7 text-[#4B5563] md:text-[1.05rem]",
   eyebrow:
     "text-sm font-semibold uppercase tracking-[0.08em] text-[#1F5F4A] md:text-base",
 };

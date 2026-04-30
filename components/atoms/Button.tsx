@@ -12,9 +12,9 @@ type ButtonProps = {
 
 const variantClasses: Record<ButtonVariant, string> = {
   primary:
-    "bg-[#1F5F4A] text-white hover:scale-[1.02] hover:bg-[#1A523F] focus-visible:ring-[#1F5F4A]",
+    "bg-[#1F5F4A] text-white shadow-sm hover:-translate-y-0.5 hover:bg-[#1A523F] hover:shadow-md focus-visible:ring-[#1F5F4A]",
   secondary:
-    "border border-[#1F5F4A] bg-transparent text-[#1F5F4A] hover:scale-[1.02] hover:bg-[#CFF5D2] focus-visible:ring-[#1F5F4A]",
+    "border border-[#1F5F4A] bg-transparent text-[#1F5F4A] hover:-translate-y-0.5 hover:bg-[#CFF5D2] focus-visible:ring-[#1F5F4A]",
 };
 
 export function Button({
@@ -26,7 +26,7 @@ export function Button({
   ...props
 }: ButtonProps) {
   const classes =
-    `inline-flex items-center justify-center rounded-xl px-6 py-3 text-base font-semibold transition duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${variantClasses[variant]} ${className}`.trim();
+    `inline-flex items-center justify-center rounded-xl px-6 py-3 text-base font-semibold transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60 ${variantClasses[variant]} ${className}`.trim();
 
   if (href) {
     return (

@@ -15,7 +15,7 @@ export function ServiceCard({
   imageAlt,
 }: ServiceCardProps) {
   return (
-    <article className="rounded-2xl bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md md:p-8">
+    <article className="rounded-2xl border border-[#DCEFE0] bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md md:p-8">
       {imageSrc ? (
         <div className="mb-5 overflow-hidden rounded-xl border border-[#CFF5D2]">
           <BrandedImage
@@ -23,7 +23,7 @@ export function ServiceCard({
             alt={imageAlt ?? `${title} service photo`}
             width={800}
             height={500}
-            className="h-44 w-full object-cover"
+            className="h-44 w-full object-cover transition duration-500 hover:scale-[1.03]"
             sizes="(min-width: 768px) 33vw, 100vw"
           />
         </div>

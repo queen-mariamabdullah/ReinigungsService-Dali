@@ -7,7 +7,7 @@ import {
 } from "../../components/organisms/SharedSections";
 
 export const metadata: Metadata = {
-  title: "Services | Reinigungsservice Dali",
+  title: "Services",
   description:
     "Explore professional home, office, and deep cleaning services from Reinigungsservice Dali.",
 };

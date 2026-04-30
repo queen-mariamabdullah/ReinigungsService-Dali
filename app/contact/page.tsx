@@ -6,7 +6,7 @@ import {
 } from "../../components/organisms/SharedSections";
 
 export const metadata: Metadata = {
-  title: "Contact | Reinigungsservice Dali",
+  title: "Contact",
   description:
     "Contact Reinigungsservice Dali for a quote. Reach us via form, email, phone, or our Göttingen location.",
 };

@@ -17,7 +17,7 @@ export function TestimonialCard({
   avatarAlt,
 }: TestimonialCardProps) {
   return (
-    <article className="rounded-2xl bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md md:p-8">
+    <article className="rounded-2xl border border-[#DCEFE0] bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md md:p-8">
       <Typography variant="body" className="mb-6">
         &ldquo;{quote}&rdquo;
       </Typography>

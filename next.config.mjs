@@ -9,6 +9,13 @@ const nextConfig = {
       },
     ],
   },
+  webpack: (config, { dev }) => {
+    // Prevent intermittent EPERM cache rename errors on Windows production builds.
+    if (!dev && process.platform === "win32") {
+      config.cache = false;
+    }
+    return config;
+  },
 };
 
 export default nextConfig;

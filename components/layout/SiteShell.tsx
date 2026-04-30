@@ -26,12 +26,12 @@ export function SiteShell({ children }: SiteShellProps) {
           <Link href="/" className="text-lg font-bold tracking-tight text-[#1F5F4A]">
             Reinigungsservice Dali
           </Link>
-          <nav className="hidden items-center gap-6 md:flex">
+          <nav className="hidden items-center gap-6 md:flex" aria-label="Main navigation">
             {navItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-sm font-semibold text-[#1A1A1A] transition hover:text-[#1F5F4A]"
+                className="text-sm font-semibold text-[#1A1A1A] transition hover:text-[#1F5F4A] focus-visible:rounded-sm"
               >
                 {item.label}
               </Link>
@@ -41,9 +41,16 @@ export function SiteShell({ children }: SiteShellProps) {
             Get a Quote
           </Button>
         </div>
-        <nav className="mx-auto flex w-full max-w-7xl gap-5 px-4 pb-4 md:hidden">
+        <nav
+          className="mx-auto flex w-full max-w-7xl flex-wrap gap-4 px-4 pb-4 md:hidden"
+          aria-label="Mobile navigation"
+        >
           {navItems.map((item) => (
-            <Link key={item.href} href={item.href} className="text-sm font-medium text-[#1F5F4A]">
+            <Link
+              key={item.href}
+              href={item.href}
+              className="text-sm font-medium text-[#1F5F4A] transition hover:text-[#1A1A1A]"
+            >
               {item.label}
             </Link>
           ))}

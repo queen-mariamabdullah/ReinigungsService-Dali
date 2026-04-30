@@ -111,20 +111,20 @@ export function HeroSection() {
     <Section className="relative overflow-hidden bg-gradient-to-br from-[#F7F9F8] via-[#EEF8F0] to-[#DDF3E2]">
       <div className="pointer-events-none absolute -left-24 top-8 h-72 w-72 rounded-full bg-[#6EE7A8]/20 blur-3xl" />
       <div className="pointer-events-none absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-[#1F5F4A]/15 blur-3xl" />
-      <div className="relative grid items-center gap-8 md:grid-cols-2 md:gap-12">
+      <div className="relative grid items-center gap-10 md:grid-cols-2 md:gap-14">
         <motion.div
           variants={fadeInUp}
           initial="hidden"
           animate="visible"
           transition={{ duration: 0.45 }}
         >
-          <Typography as="p" variant="eyebrow" className="mb-5">
+          <Typography as="p" variant="eyebrow" className="mb-4">
             Premium Cleaning Atelier
           </Typography>
-          <Typography as="h1" variant="display" className="mb-6 max-w-2xl">
+          <Typography as="h1" variant="display" className="mb-5 max-w-2xl">
             Luxury Care for Homes and Offices That Expect Excellence.
           </Typography>
-          <Typography variant="bodyMuted" className="mb-10 max-w-xl">
+          <Typography variant="bodyMuted" className="mb-8 max-w-xl">
             Bespoke cleaning programs, discreet service teams, and impeccable
             finishing standards for clients who value precision and
             presentation.
@@ -137,7 +137,7 @@ export function HeroSection() {
               View Signature Services
             </Button>
           </div>
-          <div className="mt-10 grid max-w-xl grid-cols-3 gap-4">
+          <div className="mt-8 grid max-w-xl grid-cols-3 gap-4">
             <div className="rounded-xl border border-[#CFF5D2] bg-white p-4 shadow-sm">
               <p className="text-2xl font-semibold text-[#1F5F4A]">12+</p>
               <p className="mt-1 text-xs uppercase tracking-[0.08em] text-[#6B7280]">
@@ -160,7 +160,7 @@ export function HeroSection() {
         </motion.div>
         <div
           ref={cardRef}
-          className="rounded-2xl border border-[#A9E5B7] bg-gradient-to-br from-[#E6FBEA] via-[#D9F7DF] to-[#C7F1D0] p-6 shadow-md md:p-8"
+          className="rounded-2xl border border-[#A9E5B7] bg-gradient-to-br from-[#E6FBEA] via-[#D9F7DF] to-[#C7F1D0] p-5 shadow-md md:p-8"
         >
           <BrandedImage
             src={PHOTOS.hero}
@@ -314,7 +314,7 @@ export function BlogPreviewSection() {
 export function FinalCtaSection() {
   return (
     <Section className="bg-[#1F5F4A]">
-      <div className="text-center">
+      <div className="rounded-2xl border border-[#2E7A60] bg-[#1F5F4A] px-6 py-10 text-center md:px-10">
         <Typography as="h2" variant="h2" className="mb-4 text-white">
           Ready for a Cleaner, Healthier Space?
         </Typography>
