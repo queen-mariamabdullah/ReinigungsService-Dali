@@ -6,10 +6,8 @@ export const PHOTOS = {
   hero: "/hero-main.png",
   aboutTeam:
     "https://images.unsplash.com/photo-1600880292203-757bb62b4b99?auto=format&fit=crop&w=1400&q=80",
-  contact:
-    "https://images.unsplash.com/photo-1527515637462-bff6cb806420?auto=format&fit=crop&w=1000&q=80",
-  contactIntro:
-    "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1000&q=80",
+  contact: "/contact-main.png",
+  contactIntro: "/contact-main.png",
   services: {
     home: "https://images.unsplash.com/photo-1628177142898-93e36e4e3a50?auto=format&fit=crop&w=900&q=80",
     office:

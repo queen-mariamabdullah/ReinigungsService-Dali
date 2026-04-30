@@ -80,7 +80,34 @@ export default function DatenschutzPage() {
 
             <section>
               <Typography as="h2" variant="h2" className="mb-3">
-                5. Google Maps
+                5. Technische Schutzmassnahmen beim Formular
+              </Typography>
+              <Typography variant="bodyMuted">
+                Zur Abwehr automatisierter Spam-Anfragen verwenden wir technische
+                Schutzmechanismen (z. B. ein verstecktes Formularfeld und eine
+                Begrenzung der Anfragehaeufigkeit anhand der IP-Adresse). Die
+                Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO
+                (berechtigtes Interesse an der Sicherheit und Funktionsfaehigkeit
+                unserer Website).
+              </Typography>
+            </section>
+
+            <section>
+              <Typography as="h2" variant="h2" className="mb-3">
+                6. Versand der Kontaktanfrage per E-Mail
+              </Typography>
+              <Typography variant="bodyMuted">
+                Die ueber das Kontaktformular uebermittelten Inhalte werden zur
+                Bearbeitung Ihrer Anfrage ueber unseren E-Mail-Dienstleister
+                (SMTP-Provider) an unsere interne Kontaktadresse zugestellt.
+                Sofern eine Auftragsverarbeitung erforderlich ist, erfolgt diese
+                auf Grundlage von Art. 28 DSGVO.
+              </Typography>
+            </section>
+
+            <section>
+              <Typography as="h2" variant="h2" className="mb-3">
+                7. Google Maps
               </Typography>
               <Typography variant="bodyMuted">
                 Auf unserer Website ist eine Karte von Google Maps eingebunden.
@@ -94,7 +121,7 @@ export default function DatenschutzPage() {
 
             <section>
               <Typography as="h2" variant="h2" className="mb-3">
-                6. Speicherdauer
+                8. Speicherdauer
               </Typography>
               <Typography variant="bodyMuted">
                 Wir speichern personenbezogene Daten nur so lange, wie dies fuer
@@ -105,7 +132,7 @@ export default function DatenschutzPage() {
 
             <section>
               <Typography as="h2" variant="h2" className="mb-3">
-                7. Ihre Rechte
+                9. Ihre Rechte
               </Typography>
               <Typography variant="bodyMuted">
                 Sie haben nach den gesetzlichen Voraussetzungen das Recht auf
@@ -118,7 +145,7 @@ export default function DatenschutzPage() {
 
             <section>
               <Typography as="h2" variant="h2" className="mb-3">
-                8. Kontakt zum Datenschutz
+                10. Kontakt zum Datenschutz
               </Typography>
               <Typography variant="bodyMuted">
                 Bei Fragen zum Datenschutz koennen Sie uns jederzeit unter

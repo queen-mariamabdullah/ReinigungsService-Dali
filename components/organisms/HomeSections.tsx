@@ -14,19 +14,19 @@ import { TestimonialCard } from "../molecules/TestimonialCard";
 
 const services = [
   {
-    title: "Residential Cleaning",
+    title: "Wohnungsreinigung",
     imageSrc: PHOTOS.services.home,
     description:
       "Structured weekly and bi-weekly home cleaning plans with reliable teams and consistent quality control.",
   },
   {
-    title: "Office Cleaning",
+    title: "Bueroreinigung",
     imageSrc: PHOTOS.services.office,
     description:
       "Professional workspace cleaning designed to maintain hygiene, productivity, and a strong client-facing image.",
   },
   {
-    title: "Deep Cleaning",
+    title: "Grundreinigung",
     imageSrc: PHOTOS.services.deep,
     description:
       "Intensive top-to-bottom cleaning for move-ins, seasonal resets, and high-priority sanitation requirements.",
@@ -35,17 +35,17 @@ const services = [
 
 const features = [
   {
-    title: "Verified Professionals",
+    title: "Gepruefte Fachkraefte",
     description:
       "Our trained staff follows a detailed service checklist and strict quality standards on every visit.",
   },
   {
-    title: "Transparent Communication",
+    title: "Transparente Kommunikation",
     description:
       "Fast response times, clear service updates, and dependable scheduling keep every engagement easy to manage.",
   },
   {
-    title: "Eco-Conscious Products",
+    title: "Umweltbewusste Mittel",
     description:
       "We prioritize effective cleaning products that are safer for families, teams, and indoor environments.",
   },
@@ -89,6 +89,14 @@ const blogPosts = [
   },
 ];
 
+const localPages = [
+  { href: "/reinigungsservice-goettingen", label: "Reinigungsservice Goettingen" },
+  { href: "/gebaeudereinigung-goettingen", label: "Gebaeudereinigung Goettingen" },
+  { href: "/bueroreinigung-goettingen", label: "Bueroreinigung Goettingen" },
+  { href: "/fensterreinigung-goettingen", label: "Fensterreinigung Goettingen" },
+  { href: "/grundreinigung-goettingen", label: "Grundreinigung Goettingen" },
+];
+
 const fadeInUp = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 },
@@ -119,41 +127,40 @@ export function HeroSection() {
           transition={{ duration: 0.45 }}
         >
           <Typography as="p" variant="eyebrow" className="mb-4">
-            Premium Cleaning Atelier
+            Reinigungsservice in Goettingen
           </Typography>
           <Typography as="h1" variant="display" className="mb-5 max-w-2xl">
-            Luxury Care for Homes and Offices That Expect Excellence.
+            Sauberkeit auf hoechstem Niveau fuer Zuhause und Buero.
           </Typography>
           <Typography variant="bodyMuted" className="mb-8 max-w-xl">
-            Bespoke cleaning programs, discreet service teams, and impeccable
-            finishing standards for clients who value precision and
-            presentation.
+            Strukturierte Reinigungsplaene, zuverlaessige Teams und konstant
+            hohe Qualitaet fuer private und gewerbliche Kunden in Goettingen.
           </Typography>
           <div className="flex flex-wrap gap-4">
             <Button href="/contact" className="shadow-sm">
-              Request Private Consultation
+              Jetzt Angebot anfragen
             </Button>
             <Button href="/services" variant="secondary">
-              View Signature Services
+              Leistungen ansehen
             </Button>
           </div>
           <div className="mt-8 grid max-w-xl grid-cols-3 gap-4">
             <div className="rounded-xl border border-[#CFF5D2] bg-white p-4 shadow-sm">
               <p className="text-2xl font-semibold text-[#1F5F4A]">12+</p>
               <p className="mt-1 text-xs uppercase tracking-[0.08em] text-[#6B7280]">
-                Years Experience
+                Jahre Erfahrung
               </p>
             </div>
             <div className="rounded-xl border border-[#CFF5D2] bg-white p-4 shadow-sm">
               <p className="text-2xl font-semibold text-[#1F5F4A]">4.9/5</p>
               <p className="mt-1 text-xs uppercase tracking-[0.08em] text-[#6B7280]">
-                Client Rating
+                Kundenbewertung
               </p>
             </div>
             <div className="rounded-xl border border-[#CFF5D2] bg-white p-4 shadow-sm">
               <p className="text-2xl font-semibold text-[#1F5F4A]">48h</p>
               <p className="mt-1 text-xs uppercase tracking-[0.08em] text-[#6B7280]">
-                Response Window
+                Rueckmeldung
               </p>
             </div>
           </div>
@@ -172,11 +179,11 @@ export function HeroSection() {
             className="mb-6 h-auto w-full rounded-xl object-cover"
           />
           <Typography as="h2" variant="h2" className="mb-4">
-            Elevated Standards, Every Visit
+            Sorgfalt bei jedem Einsatz
           </Typography>
           <Typography variant="bodyMuted">
-            White-glove execution, detail-led checklists, and premium-grade
-            consistency designed for discerning private and business clients.
+            Klare Checklisten, geschulte Teams und nachvollziehbare Ergebnisse
+            bei jedem Termin.
           </Typography>
         </div>
       </div>
@@ -196,14 +203,14 @@ export function ServicesSection() {
         transition={{ duration: 0.45 }}
       >
         <Typography as="p" variant="eyebrow" className="mb-3">
-          Services
+          Leistungen
         </Typography>
         <Typography as="h2" variant="h2" className="mb-4">
-          Tailored Cleaning for Every Space
+          Passende Reinigung fuer jede Flaeche
         </Typography>
         <Typography variant="bodyMuted" className="mx-auto max-w-3xl">
-          Flexible solutions for private homes, business environments, and deep
-          cleaning requirements.
+          Flexible Loesungen fuer Privathaushalte, Unternehmen und intensive
+          Reinigungsanforderungen.
         </Typography>
       </motion.div>
       <div className="grid gap-6 md:grid-cols-3">
@@ -226,10 +233,10 @@ export function WhyChooseUsSection() {
     <Section className="bg-[#F7F9F8]">
       <div className="mb-12 text-center">
         <Typography as="p" variant="eyebrow" className="mb-3">
-          Why Choose Us
+          Warum wir
         </Typography>
         <Typography as="h2" variant="h2" className="mb-4">
-          Built on Trust and Consistency
+          Verlaesslich, gruendlich, professionell
         </Typography>
       </div>
       <div className="grid gap-6 md:grid-cols-3">
@@ -250,10 +257,10 @@ export function TestimonialsSection() {
     <Section className="bg-white">
       <div className="mb-12 text-center">
         <Typography as="p" variant="eyebrow" className="mb-3">
-          Testimonials
+          Kundenstimmen
         </Typography>
         <Typography as="h2" variant="h2">
-          Trusted by Homeowners and Teams
+          Vertrauen von Privat- und Firmenkunden
         </Typography>
       </div>
       <div className="grid gap-6 md:grid-cols-2">
@@ -276,10 +283,10 @@ export function BlogPreviewSection() {
     <Section className="bg-[#F7F9F8]">
       <div className="mb-12 text-center">
         <Typography as="p" variant="eyebrow" className="mb-3">
-          Insights
+          Ratgeber
         </Typography>
         <Typography as="h2" variant="h2" className="mb-4">
-          Cleaning Knowledge and Practical Guides
+          Tipps rund um Reinigung und Hygiene
         </Typography>
       </div>
       <div className="grid gap-6 md:grid-cols-3">
@@ -311,22 +318,48 @@ export function BlogPreviewSection() {
   );
 }
 
+export function LocalCoverageSection() {
+  return (
+    <Section className="bg-white">
+      <div className="mb-10 text-center">
+        <Typography as="p" variant="eyebrow" className="mb-3">
+          Goettingen Servicegebiet
+        </Typography>
+        <Typography as="h2" variant="h2" className="mb-4">
+          Reinigungsservice in Goettingen und Umgebung
+        </Typography>
+        <Typography variant="bodyMuted" className="mx-auto max-w-3xl">
+          Finden Sie schnell die passende Leistung fuer Ihren Standort und
+          Bedarf.
+        </Typography>
+      </div>
+      <div className="flex flex-wrap justify-center gap-3">
+        {localPages.map((item) => (
+          <Button key={item.href} href={item.href} variant="secondary" className="text-sm md:text-base">
+            {item.label}
+          </Button>
+        ))}
+      </div>
+    </Section>
+  );
+}
+
 export function FinalCtaSection() {
   return (
     <Section className="bg-[#1F5F4A]">
       <div className="rounded-2xl border border-[#2E7A60] bg-[#1F5F4A] px-6 py-10 text-center md:px-10">
         <Typography as="h2" variant="h2" className="mb-4 text-white">
-          Ready for a Cleaner, Healthier Space?
+          Bereit fuer ein sauberes Umfeld?
         </Typography>
         <Typography variant="body" className="mx-auto mb-8 max-w-2xl text-[#CFF5D2]">
-          Get a fast quote and let our team create a cleaning plan that fits
-          your home or business.
+          Erhalten Sie schnell ein Angebot. Wir erstellen einen Reinigungsplan,
+          der zu Ihrem Objekt passt.
         </Typography>
         <Button
           href="/contact"
           className="bg-[#6EE7A8] text-[#1A1A1A] hover:bg-[#5DD898]"
         >
-          Contact Us Today
+          Jetzt Kontakt aufnehmen
         </Button>
       </div>
     </Section>

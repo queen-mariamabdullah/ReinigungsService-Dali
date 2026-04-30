@@ -13,6 +13,15 @@ export const metadata: Metadata = {
   },
   description:
     "Professional residential and commercial cleaning services in Goettingen with dependable, high-standard execution.",
+  keywords: [
+    "reinigungsservice goettingen",
+    "gebaeudereinigung goettingen",
+    "bueroreinigung goettingen",
+    "fensterreinigung goettingen",
+    "grundreinigung goettingen",
+  ],
+  category: "Cleaning services",
+  authors: [{ name: "Reinigungsservice Dali" }],
   alternates: {
     canonical: "/",
   },

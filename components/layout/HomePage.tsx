@@ -2,6 +2,7 @@ import {
   BlogPreviewSection,
   FinalCtaSection,
   HeroSection,
+  LocalCoverageSection,
   ServicesSection,
   TestimonialsSection,
   WhyChooseUsSection,
@@ -15,6 +16,7 @@ export function HomePage() {
       <WhyChooseUsSection />
       <TestimonialsSection />
       <BlogPreviewSection />
+      <LocalCoverageSection />
       <FinalCtaSection />
     </main>
   );

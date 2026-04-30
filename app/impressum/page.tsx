@@ -17,7 +17,7 @@ export default function ImpressumPage() {
             Impressum
           </Typography>
           <Typography variant="bodyMuted" className="mb-10">
-            Angaben gemaess 5 TMG
+            Angaben gemaess § 5 TMG
           </Typography>
 
           <div className="space-y-10">

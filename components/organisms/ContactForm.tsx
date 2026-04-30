@@ -2,6 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import Link from "next/link";
+import { trackEvent } from "@/lib/client/analytics";
 import { Button } from "../atoms/Button";
 import { Input } from "../atoms/Input";
 import { Textarea } from "../atoms/Textarea";
@@ -43,10 +44,16 @@ export function ContactForm() {
         throw new Error(result.error ?? "Ihre Anfrage konnte nicht gesendet werden.");
       }
 
+      trackEvent("contact_form_submit_success", {
+        form: "contact",
+      });
       form.reset();
       setHasConsent(false);
       setState("success");
     } catch (error) {
+      trackEvent("contact_form_submit_error", {
+        form: "contact",
+      });
       setState("idle");
       setErrorMessage(
         error instanceof Error

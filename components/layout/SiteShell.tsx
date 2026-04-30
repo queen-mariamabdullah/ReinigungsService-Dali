@@ -7,10 +7,11 @@ type SiteShellProps = {
 };
 
 const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
-  { href: "/contact", label: "Contact" },
+  { href: "/", label: "Start" },
+  { href: "/reinigungsservice-goettingen", label: "Goettingen" },
+  { href: "/about", label: "Ueber uns" },
+  { href: "/services", label: "Leistungen" },
+  { href: "/contact", label: "Kontakt" },
 ];
 
 const legalItems = [
@@ -38,7 +39,7 @@ export function SiteShell({ children }: SiteShellProps) {
             ))}
           </nav>
           <Button href="/contact" className="hidden md:inline-flex">
-            Get a Quote
+            Angebot anfragen
           </Button>
         </div>
         <nav

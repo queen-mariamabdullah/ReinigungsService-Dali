@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: "About",
   description:
     "Learn about Reinigungsservice Dali, our mission, values, and professional cleaning standards.",
+  keywords: ["reinigungsfirma goettingen", "ueber uns reinigungsservice dali"],
 };
 
 export default function AboutPage() {
