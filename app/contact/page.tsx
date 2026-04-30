@@ -6,21 +6,21 @@ import {
 } from "../../components/organisms/SharedSections";
 
 export const metadata: Metadata = {
-  title: "Contact",
+  title: "Kontakt",
   description:
-    "Contact Reinigungsservice Dali for a quote. Reach us via form, email, phone, or our Göttingen location.",
-  keywords: ["kontakt reinigungsservice goettingen", "angebot reinigungsfirma goettingen"],
+    "Kontaktieren Sie Reinigungsservice Dali fuer ein Angebot - per Formular, E-Mail, Telefon oder direkt in Göttingen.",
+  keywords: ["kontakt reinigungsservice göttingen", "angebot reinigungsfirma göttingen"],
 };
 
 export default function ContactPage() {
   return (
     <main className="min-h-screen bg-[#F7F9F8] text-[#1A1A1A]">
       <PageIntroSection
-        eyebrow="Contact"
-        title="Let’s Plan Your Cleaning Service"
-        description="Tell us what you need and we will respond quickly with a clear, tailored quote."
+        eyebrow="Kontakt"
+        title="Planen wir gemeinsam Ihre Reinigung"
+        description="Teilen Sie uns Ihren Bedarf mit und Sie erhalten zeitnah ein klares, individuelles Angebot."
         imageSrc={PHOTOS.contactIntro}
-        imageAlt="Bright, welcoming interior where we plan your cleaning service"
+        imageAlt="Freundlicher Empfangsbereich fuer die Planung Ihrer Reinigung"
       />
       <ContactSection />
     </main>

@@ -65,29 +65,29 @@ export function AboutContentSection() {
       <div className="grid gap-8 md:grid-cols-3">
         <article className="rounded-2xl border border-[#E3EFE5] bg-[#F7F9F8] p-6 md:p-8">
           <Typography as="h3" variant="h3" className="mb-4">
-            Who We Are
+            Wer wir sind
           </Typography>
           <Typography variant="bodyMuted">
-            We are a Germany-based cleaning team delivering reliable and
-            premium-quality service for homes and businesses.
+            Wir sind ein Reinigungsteam aus Göttingen und bieten zuverlaessige
+            Servicequalitaet fuer private und gewerbliche Kunden.
           </Typography>
         </article>
         <article className="rounded-2xl border border-[#E3EFE5] bg-[#F7F9F8] p-6 md:p-8">
           <Typography as="h3" variant="h3" className="mb-4">
-            Mission
+            Auftrag
           </Typography>
           <Typography variant="bodyMuted">
-            Create cleaner, healthier spaces through consistent standards,
-            transparent communication, and dependable execution.
+            Saubere und gesunde Raeume durch konstante Standards, transparente
+            Kommunikation und verlaessliche Ausfuehrung.
           </Typography>
         </article>
         <article className="rounded-2xl border border-[#E3EFE5] bg-[#F7F9F8] p-6 md:p-8">
           <Typography as="h3" variant="h3" className="mb-4">
-            Values
+            Werte
           </Typography>
           <Typography variant="bodyMuted">
-            Professionalism, trust, and attention to detail are built into
-            every visit we deliver.
+            Professionalitaet, Vertrauen und Liebe zum Detail praegen jeden
+            Einsatz unseres Teams.
           </Typography>
         </article>
       </div>
@@ -101,20 +101,20 @@ export function ProfessionalPositioningSection() {
       <div className="grid gap-8 md:grid-cols-2 md:gap-12">
         <article className="rounded-2xl bg-white p-6 shadow-sm md:p-8">
           <Typography as="h2" variant="h2" className="mb-4">
-            Professional Standards
+            Professionelle Standards
           </Typography>
           <Typography variant="bodyMuted">
-            Every service follows a documented checklist, quality review points,
-            and client-specific notes to ensure dependable results over time.
+            Jeder Service folgt dokumentierten Checklisten, Qualitaetskontrollen
+            und objektspezifischen Hinweisen fuer dauerhaft verlaessliche Ergebnisse.
           </Typography>
         </article>
         <article className="rounded-2xl bg-white p-6 shadow-sm md:p-8">
           <Typography as="h2" variant="h2" className="mb-4">
-            Service Positioning
+            Unser Anspruch
           </Typography>
           <Typography variant="bodyMuted">
-            We operate as a premium partner for homes and businesses that value
-            punctuality, communication, and measurable cleaning quality.
+            Wir arbeiten als Premium-Partner fuer Kunden, die Wert auf
+            Puenktlichkeit, klare Kommunikation und messbare Reinigungsqualitaet legen.
           </Typography>
         </article>
       </div>
@@ -124,40 +124,40 @@ export function ProfessionalPositioningSection() {
 
 const serviceItems = [
   {
-    title: "Home Cleaning",
+    title: "Wohnungsreinigung",
     imageSrc: PHOTOS.services.home,
     description:
-      "Routine cleaning packages designed for comfort, hygiene, and consistent results in private residences.",
+      "Regelmaessige Reinigungspakete fuer mehr Komfort, Hygiene und konstant saubere Wohnraeume.",
   },
   {
-    title: "Office Cleaning",
+    title: "Bueroreinigung",
     imageSrc: PHOTOS.services.office,
     description:
-      "Flexible service plans that keep workspaces clean, presentable, and ready for employees and guests.",
+      "Flexible Reinigungsplaene, damit Arbeitsplaetze sauber, repraesentativ und jederzeit einsatzbereit bleiben.",
   },
   {
-    title: "Deep Cleaning",
+    title: "Grundreinigung",
     imageSrc: PHOTOS.services.deep,
     description:
-      "Detailed intensive cleaning for seasonal resets, post-renovation needs, and high-attention spaces.",
+      "Gruendliche Intensivreinigung fuer saisonale Neustarts, nach Renovierungen und bei hohem Reinigungsbedarf.",
   },
 ];
 
 const packages = [
   {
-    name: "Starter",
-    price: "From €89",
-    details: "Ideal for small apartments and routine upkeep.",
+    name: "Basis",
+    price: "Ab 89 EUR",
+    details: "Ideal fuer kleinere Wohnungen und regelmaessige Unterhaltsreinigung.",
   },
   {
-    name: "Business",
-    price: "From €149",
-    details: "Perfect for office spaces with weekly maintenance.",
+    name: "Buero",
+    price: "Ab 149 EUR",
+    details: "Perfekt fuer Bueroeinheiten mit woechentlicher Reinigung.",
   },
   {
-    name: "Deep Clean",
-    price: "From €219",
-    details: "Comprehensive top-to-bottom reset for any property.",
+    name: "Grundreinigung",
+    price: "Ab 219 EUR",
+    details: "Umfassende Reinigung von oben bis unten fuer jede Objektart.",
   },
 ];
 
@@ -166,11 +166,11 @@ export function ServicesGridSection() {
     <Section className="bg-white">
       <div className="mb-12">
         <Typography as="h2" variant="h2" className="mb-4 text-center">
-          Service Packages
+          Leistungspakete
         </Typography>
         <Typography variant="bodyMuted" className="mx-auto max-w-3xl text-center">
-          Clear and practical service options tailored to residential and
-          commercial requirements.
+          Klare und praxisnahe Serviceoptionen, abgestimmt auf private und
+          gewerbliche Anforderungen.
         </Typography>
       </div>
       <div className="grid gap-6 md:grid-cols-3">
@@ -180,7 +180,7 @@ export function ServicesGridSection() {
             title={service.title}
             description={service.description}
             imageSrc={service.imageSrc}
-            imageAlt={`${service.title} photo`}
+            imageAlt={`${service.title} Bild`}
           />
         ))}
       </div>
@@ -193,11 +193,11 @@ export function PricingPackagesSection() {
     <Section className="bg-[#F7F9F8]">
       <div className="mb-12 text-center">
         <Typography as="h2" variant="h2" className="mb-4">
-          Transparent Packages
+          Transparente Pakete
         </Typography>
         <Typography variant="bodyMuted" className="mx-auto max-w-3xl">
-          Indicative pricing for planning. Final quotes are tailored to your
-          space, frequency, and service scope.
+          Richtpreise zur Planung. Das finale Angebot wird individuell nach
+          Flaeche, Intervall und Leistungsumfang erstellt.
         </Typography>
       </div>
       <div className="grid gap-6 md:grid-cols-3">
@@ -228,7 +228,7 @@ export function ContactSection() {
           <div className="mb-6 overflow-hidden rounded-2xl border border-[#CFF5D2]">
             <BrandedImage
               src={PHOTOS.contact}
-              alt="Friendly service desk and welcome area"
+              alt="Freundlicher Servicebereich mit Kontaktmoeglichkeiten"
               width={1000}
               height={600}
               className="h-48 w-full object-cover md:h-56"
@@ -236,25 +236,25 @@ export function ContactSection() {
             />
           </div>
           <Typography as="h2" variant="h2" className="mb-4">
-            Contact Information
+            Kontaktinformationen
           </Typography>
           <Typography variant="bodyMuted" className="mb-6">
-            Reach out for availability, service scope, and pricing details.
+            Kontaktieren Sie uns fuer Verfuegbarkeit, Leistungsumfang und Preisinformationen.
           </Typography>
           <div className="space-y-4">
             <Typography variant="body">
-              <span className="font-semibold">Email:</span> hello@reinigung-dali.de
+              <span className="font-semibold">E-Mail:</span> hello@reinigung-dali.de
             </Typography>
             <Typography variant="body">
-              <span className="font-semibold">Phone:</span> +49 30 1234567
+              <span className="font-semibold">Telefon:</span> +49 30 1234567
             </Typography>
             <Typography variant="body">
-              <span className="font-semibold">Location:</span> Theodor-Heuss-Str.11, 37075 Göttingen
+              <span className="font-semibold">Adresse:</span> Theodor-Heuss-Str.11, 37075 Göttingen
             </Typography>
           </div>
           <div className="mt-8 overflow-hidden rounded-2xl border border-[#CFF5D2]">
             <ConsentMapEmbed
-              title="Göttingen map"
+              title="Karte Göttingen"
               src="https://www.google.com/maps?q=Theodor-Heuss-Str.11%2C37075%20Goettingen&z=15&output=embed"
             />
           </div>
@@ -262,7 +262,7 @@ export function ContactSection() {
 
         <article className="rounded-2xl border border-[#CFF5D2] bg-white p-6 shadow-sm md:p-8">
           <Typography as="h2" variant="h2" className="mb-6">
-            Send a Message
+            Nachricht senden
           </Typography>
           <ContactForm />
         </article>

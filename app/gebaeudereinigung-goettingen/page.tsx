@@ -5,10 +5,10 @@ import { Section } from "../../components/atoms/Section";
 import { Typography } from "../../components/atoms/Typography";
 
 export const metadata: Metadata = {
-  title: "Gebaeudereinigung Goettingen",
+  title: "Gebäudereinigung Göttingen",
   description:
-    "Gebaeudereinigung in Goettingen durch Reinigungsservice Dali. Strukturierte Unterhaltsreinigung fuer Wohn- und Gewerbeobjekte.",
-  keywords: ["gebaeudereinigung goettingen", "unterhaltsreinigung goettingen"],
+    "Gebaeudereinigung in Göttingen durch Reinigungsservice Dali. Strukturierte Unterhaltsreinigung fuer Wohn- und Gewerbeobjekte.",
+  keywords: ["gebaeudereinigung göttingen", "unterhaltsreinigung göttingen"],
   alternates: {
     canonical: "/gebaeudereinigung-goettingen",
   },
@@ -18,7 +18,7 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   serviceType: "Gebaeudereinigung",
-  areaServed: "Goettingen",
+  areaServed: "Göttingen",
   provider: { "@type": "LocalBusiness", name: "Reinigungsservice Dali" },
 };
 
@@ -27,7 +27,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Start", item: "/" },
-    { "@type": "ListItem", position: 2, name: "Gebaeudereinigung Goettingen", item: "/gebaeudereinigung-goettingen" },
+    { "@type": "ListItem", position: 2, name: "Gebäudereinigung Göttingen", item: "/gebaeudereinigung-goettingen" },
   ],
 };
 
@@ -49,10 +49,10 @@ export default function GebaeudereinigungPage() {
       <Section className="bg-white">
         <div className="mx-auto max-w-4xl">
           <Typography as="p" variant="eyebrow" className="mb-3">
-            Gebaeudereinigung Goettingen
+            Gebäudereinigung Göttingen
           </Typography>
           <Typography as="h1" variant="h1" className="mb-5">
-            Zuverlaessige Gebaeudereinigung fuer Immobilien in Goettingen
+            Zuverlaessige Gebaeudereinigung fuer Immobilien in Göttingen
           </Typography>
           <Typography variant="bodyMuted" className="mb-6">
             Wir reinigen Treppenhaeuser, Gemeinschaftsflaechen, Sanitairbereiche

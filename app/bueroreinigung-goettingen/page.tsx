@@ -5,10 +5,10 @@ import { Section } from "../../components/atoms/Section";
 import { Typography } from "../../components/atoms/Typography";
 
 export const metadata: Metadata = {
-  title: "Bueroreinigung Goettingen",
+  title: "Büroreinigung Göttingen",
   description:
-    "Professionelle Bueroreinigung in Goettingen. Reinigungsservice Dali sorgt fuer hygienische, gepflegte und kundenfreundliche Arbeitsumgebungen.",
-  keywords: ["bueroreinigung goettingen", "office cleaning goettingen"],
+    "Professionelle Bueroreinigung in Göttingen. Reinigungsservice Dali sorgt fuer hygienische, gepflegte und kundenfreundliche Arbeitsumgebungen.",
+  keywords: ["bueroreinigung göttingen", "buero reinigung göttingen"],
   alternates: {
     canonical: "/bueroreinigung-goettingen",
   },
@@ -18,7 +18,7 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   serviceType: "Bueroreinigung",
-  areaServed: "Goettingen",
+  areaServed: "Göttingen",
   provider: { "@type": "LocalBusiness", name: "Reinigungsservice Dali" },
 };
 
@@ -27,7 +27,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Start", item: "/" },
-    { "@type": "ListItem", position: 2, name: "Bueroreinigung Goettingen", item: "/bueroreinigung-goettingen" },
+    { "@type": "ListItem", position: 2, name: "Büroreinigung Göttingen", item: "/bueroreinigung-goettingen" },
   ],
 };
 
@@ -49,10 +49,10 @@ export default function BueroreinigungPage() {
       <Section className="bg-white">
         <div className="mx-auto max-w-4xl">
           <Typography as="p" variant="eyebrow" className="mb-3">
-            Bueroreinigung Goettingen
+            Büroreinigung Göttingen
           </Typography>
           <Typography as="h1" variant="h1" className="mb-5">
-            Bueroreinigung in Goettingen fuer produktive Teams
+            Bueroreinigung in Göttingen fuer produktive Teams
           </Typography>
           <Typography variant="bodyMuted" className="mb-6">
             Ein sauberes Buero reduziert Ausfallzeiten, staerkt den ersten
@@ -60,7 +60,7 @@ export default function BueroreinigungPage() {
           </Typography>
           <Typography variant="bodyMuted" className="mb-8">
             Wir bieten fruehe, spaete und flexible Einsatzzeiten fuer laufende
-            Bueroreinigung in Goettingen.
+            Bueroreinigung in Göttingen.
           </Typography>
           <Button href="/contact">Bueroreinigung anfragen</Button>
         </div>

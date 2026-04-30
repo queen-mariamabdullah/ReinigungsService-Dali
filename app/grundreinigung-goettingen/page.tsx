@@ -5,10 +5,10 @@ import { Section } from "../../components/atoms/Section";
 import { Typography } from "../../components/atoms/Typography";
 
 export const metadata: Metadata = {
-  title: "Grundreinigung Goettingen",
+  title: "Grundreinigung Göttingen",
   description:
-    "Grundreinigung in Goettingen fuer intensive Tiefenreinigung bei Umzug, Neustart oder stark beanspruchten Flaechen.",
-  keywords: ["grundreinigung goettingen", "tiefenreinigung goettingen"],
+    "Grundreinigung in Göttingen fuer intensive Tiefenreinigung bei Umzug, Neustart oder stark beanspruchten Flaechen.",
+  keywords: ["grundreinigung göttingen", "tiefenreinigung göttingen"],
   alternates: {
     canonical: "/grundreinigung-goettingen",
   },
@@ -18,7 +18,7 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   serviceType: "Grundreinigung",
-  areaServed: "Goettingen",
+  areaServed: "Göttingen",
   provider: { "@type": "LocalBusiness", name: "Reinigungsservice Dali" },
 };
 
@@ -27,7 +27,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Start", item: "/" },
-    { "@type": "ListItem", position: 2, name: "Grundreinigung Goettingen", item: "/grundreinigung-goettingen" },
+    { "@type": "ListItem", position: 2, name: "Grundreinigung Göttingen", item: "/grundreinigung-goettingen" },
   ],
 };
 
@@ -49,10 +49,10 @@ export default function GrundreinigungPage() {
       <Section className="bg-white">
         <div className="mx-auto max-w-4xl">
           <Typography as="p" variant="eyebrow" className="mb-3">
-            Grundreinigung Goettingen
+            Grundreinigung Göttingen
           </Typography>
           <Typography as="h1" variant="h1" className="mb-5">
-            Intensiv-Grundreinigung fuer Goettingen
+            Intensiv-Grundreinigung fuer Göttingen
           </Typography>
           <Typography variant="bodyMuted" className="mb-6">
             Unsere Grundreinigung entfernt hartnaeckige Rueckstaende und

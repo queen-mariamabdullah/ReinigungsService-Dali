@@ -10,15 +10,15 @@ import { Section } from "../../components/atoms/Section";
 import { Typography } from "../../components/atoms/Typography";
 
 export const metadata: Metadata = {
-  title: "Services",
+  title: "Leistungen",
   description:
-    "Explore professional home, office, and deep cleaning services from Reinigungsservice Dali.",
+    "Entdecken Sie professionelle Wohnungs-, Buero- und Grundreinigung von Reinigungsservice Dali.",
   keywords: [
-    "services goettingen",
-    "gebaeudereinigung goettingen",
-    "bueroreinigung goettingen",
-    "fensterreinigung goettingen",
-    "grundreinigung goettingen",
+    "leistungen göttingen",
+    "gebaeudereinigung göttingen",
+    "bueroreinigung göttingen",
+    "fensterreinigung göttingen",
+    "grundreinigung göttingen",
   ],
 };
 
@@ -26,29 +26,29 @@ export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-[#F7F9F8] text-[#1A1A1A]">
       <PageIntroSection
-        eyebrow="Services"
-        title="Professional Cleaning Services for Every Need"
-        description="Clear service options for residential and commercial spaces, delivered with quality and consistency."
+        eyebrow="Leistungen"
+        title="Professionelle Reinigungsleistungen fuer jeden Bedarf"
+        description="Klare Servicepakete fuer private und gewerbliche Flaechen, umgesetzt mit gleichbleibend hoher Qualitaet."
         imageSrc={PHOTOS.services.office}
-        imageAlt="Clean, bright office space ready for professional maintenance"
+        imageAlt="Sauberer, heller Bueroraum bereit fuer professionelle Reinigung"
       />
       <ServicesGridSection />
       <PricingPackagesSection />
       <Section className="bg-white">
         <div className="mx-auto max-w-4xl">
           <Typography as="h2" variant="h2" className="mb-4 text-center">
-            Lokale Leistungsseiten fuer Goettingen
+            Lokale Leistungsseiten fuer Göttingen
           </Typography>
           <Typography variant="bodyMuted" className="mb-6 text-center">
-            Detaillierte Informationen zu jeder Leistung in Goettingen.
+            Detaillierte Informationen zu jeder Leistung in Göttingen.
           </Typography>
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              ["/reinigungsservice-goettingen", "Reinigungsservice Goettingen"],
-              ["/gebaeudereinigung-goettingen", "Gebaeudereinigung Goettingen"],
-              ["/bueroreinigung-goettingen", "Bueroreinigung Goettingen"],
-              ["/fensterreinigung-goettingen", "Fensterreinigung Goettingen"],
-              ["/grundreinigung-goettingen", "Grundreinigung Goettingen"],
+              ["/reinigungsservice-goettingen", "Reinigungsservice Göttingen"],
+              ["/gebaeudereinigung-goettingen", "Gebäudereinigung Göttingen"],
+              ["/bueroreinigung-goettingen", "Büroreinigung Göttingen"],
+              ["/fensterreinigung-goettingen", "Fensterreinigung Göttingen"],
+              ["/grundreinigung-goettingen", "Grundreinigung Göttingen"],
             ].map(([href, label]) => (
               <Link
                 key={href}

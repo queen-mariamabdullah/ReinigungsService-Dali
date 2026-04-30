@@ -12,15 +12,15 @@ export const metadata: Metadata = {
     template: "%s | Reinigungsservice Dali",
   },
   description:
-    "Professional residential and commercial cleaning services in Goettingen with dependable, high-standard execution.",
+    "Professionelle Reinigungsleistungen fuer private und gewerbliche Kunden in Göttingen mit verlaesslicher Ausfuehrung.",
   keywords: [
-    "reinigungsservice goettingen",
-    "gebaeudereinigung goettingen",
-    "bueroreinigung goettingen",
-    "fensterreinigung goettingen",
-    "grundreinigung goettingen",
+    "reinigungsservice göttingen",
+    "gebaeudereinigung göttingen",
+    "bueroreinigung göttingen",
+    "fensterreinigung göttingen",
+    "grundreinigung göttingen",
   ],
-  category: "Cleaning services",
+  category: "Reinigungsdienstleistungen",
   authors: [{ name: "Reinigungsservice Dali" }],
   alternates: {
     canonical: "/",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Reinigungsservice Dali",
     description:
-      "Professional residential and commercial cleaning services in Goettingen with dependable, high-standard execution.",
+      "Professionelle Reinigungsleistungen fuer private und gewerbliche Kunden in Göttingen mit verlaesslicher Ausfuehrung.",
     locale: "de_DE",
     type: "website",
     images: [{ url: "/hero-main.png", width: 1024, height: 768, alt: "Reinigungsservice Dali team at work" }],
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Reinigungsservice Dali",
     description:
-      "Professional residential and commercial cleaning services in Goettingen.",
+      "Professionelle Reinigungsleistungen in Göttingen.",
     images: ["/hero-main.png"],
   },
 };
@@ -66,7 +66,7 @@ export default function RootLayout({
                 "@type": "PostalAddress",
                 streetAddress: "Theodor-Heuss-Str.11",
                 postalCode: "37075",
-                addressLocality: "Goettingen",
+                addressLocality: "Göttingen",
                 addressCountry: "DE",
               },
             }),

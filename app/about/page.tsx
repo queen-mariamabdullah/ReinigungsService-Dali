@@ -7,21 +7,21 @@ import {
 } from "../../components/organisms/SharedSections";
 
 export const metadata: Metadata = {
-  title: "About",
+  title: "Ueber uns",
   description:
-    "Learn about Reinigungsservice Dali, our mission, values, and professional cleaning standards.",
-  keywords: ["reinigungsfirma goettingen", "ueber uns reinigungsservice dali"],
+    "Lernen Sie Reinigungsservice Dali kennen: unsere Mission, Werte und professionellen Reinigungsstandards.",
+  keywords: ["reinigungsfirma göttingen", "ueber uns reinigungsservice dali"],
 };
 
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-[#F7F9F8] text-[#1A1A1A]">
       <PageIntroSection
-        eyebrow="About Us"
-        title="A Modern Cleaning Team You Can Trust"
-        description="We combine reliable service systems with premium-quality execution to help homes and businesses stay spotless."
+        eyebrow="Ueber uns"
+        title="Ein modernes Reinigungsteam, dem Sie vertrauen koennen"
+        description="Wir kombinieren verlaessliche Serviceablaeufe mit hoher Ausfuehrungsqualitaet, damit Wohn- und Gewerbeflaechen dauerhaft sauber bleiben."
         imageSrc={PHOTOS.aboutTeam}
-        imageAlt="Professional team meeting focused on service quality and reliability"
+        imageAlt="Professionelles Teammeeting mit Fokus auf Qualitaet und Zuverlaessigkeit"
       />
       <AboutContentSection />
       <ProfessionalPositioningSection />

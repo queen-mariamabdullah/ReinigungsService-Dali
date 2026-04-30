@@ -72,7 +72,7 @@ export function ContactForm() {
           name="website"
           tabIndex={-1}
           autoComplete="off"
-          placeholder="Leave this field empty"
+          placeholder="Bitte dieses Feld leer lassen"
         />
       </div>
       <div className="space-y-2">

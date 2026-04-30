@@ -8,14 +8,14 @@ import { Typography } from "../../components/atoms/Typography";
 import { BrandedImage } from "../../components/molecules/BrandedImage";
 
 export const metadata: Metadata = {
-  title: "Reinigungsservice Goettingen",
+  title: "Reinigungsservice Göttingen",
   description:
-    "Reinigungsservice Dali ist Ihr Partner fuer Reinigungsservice in Goettingen: Gebaeudereinigung, Bueroreinigung, Fensterreinigung und Grundreinigung.",
+    "Reinigungsservice Dali ist Ihr Partner fuer Reinigungsservice in Göttingen: Gebaeudereinigung, Bueroreinigung, Fensterreinigung und Grundreinigung.",
   keywords: [
-    "reinigungsservice goettingen",
-    "reinigungsfirma goettingen",
-    "gebaeudereinigung goettingen",
-    "bueroreinigung goettingen",
+    "reinigungsservice göttingen",
+    "reinigungsfirma göttingen",
+    "gebaeudereinigung göttingen",
+    "bueroreinigung göttingen",
   ],
   alternates: {
     canonical: "/reinigungsservice-goettingen",
@@ -28,10 +28,10 @@ const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "Welche Leistungen bietet Ihr Reinigungsservice in Goettingen?",
+      name: "Welche Leistungen bietet Ihr Reinigungsservice in Göttingen?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Wir bieten Gebaeudereinigung, Bueroreinigung, Fensterreinigung und Grundreinigung fuer private und gewerbliche Kunden in Goettingen.",
+        text: "Wir bieten Gebaeudereinigung, Bueroreinigung, Fensterreinigung und Grundreinigung fuer private und gewerbliche Kunden in Göttingen.",
       },
     },
     {
@@ -57,7 +57,7 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   serviceType: "Reinigungsservice",
-  areaServed: "Goettingen",
+  areaServed: "Göttingen",
   provider: { "@type": "LocalBusiness", name: "Reinigungsservice Dali" },
 };
 
@@ -66,7 +66,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Start", item: "/" },
-    { "@type": "ListItem", position: 2, name: "Reinigungsservice Goettingen", item: "/reinigungsservice-goettingen" },
+    { "@type": "ListItem", position: 2, name: "Reinigungsservice Göttingen", item: "/reinigungsservice-goettingen" },
   ],
 };
 
@@ -96,14 +96,14 @@ export default function GoettingenLandingPage() {
         <div className="grid items-center gap-8 md:grid-cols-2 md:gap-12">
           <div>
             <Typography as="p" variant="eyebrow" className="mb-3">
-              Reinigungsservice Goettingen
+              Reinigungsservice Göttingen
             </Typography>
             <Typography as="h1" variant="h1" className="mb-5">
-              Ihr professioneller Reinigungsservice in Goettingen
+              Ihr professioneller Reinigungsservice in Göttingen
             </Typography>
             <Typography variant="bodyMuted" className="mb-8">
               Reinigungsservice Dali bietet zuverlaessige Reinigung fuer Wohn-
-              und Gewerbeflaechen in Goettingen. Wir arbeiten mit klaren
+              und Gewerbeflaechen in Göttingen. Wir arbeiten mit klaren
               Checklisten, festen Standards und messbarer Qualitaet.
             </Typography>
             <div className="flex flex-wrap gap-4">
@@ -116,7 +116,7 @@ export default function GoettingenLandingPage() {
           <div className="overflow-hidden rounded-2xl border border-[#CFF5D2] bg-[#F7F9F8] p-4">
             <BrandedImage
               src={PHOTOS.hero}
-              alt="Reinigungsservice Dali in Goettingen bei der professionellen Reinigung"
+              alt="Reinigungsservice Dali in Göttingen bei der professionellen Reinigung"
               width={900}
               height={620}
               priority
@@ -130,7 +130,7 @@ export default function GoettingenLandingPage() {
       <Section className="bg-[#F7F9F8]">
         <div className="mb-8 text-center">
           <Typography as="h2" variant="h2" className="mb-3">
-            Unsere Reinigungsleistungen in Goettingen
+            Unsere Reinigungsleistungen in Göttingen
           </Typography>
           <Typography variant="bodyMuted" className="mx-auto max-w-3xl">
             Waehlbare Servicebausteine fuer Privatkunden, Bueros und
@@ -141,22 +141,22 @@ export default function GoettingenLandingPage() {
           {[
             {
               href: "/gebaeudereinigung-goettingen",
-              title: "Gebaeudereinigung Goettingen",
+              title: "Gebäudereinigung Göttingen",
               text: "Regelmaessige Unterhaltsreinigung fuer Wohn- und Gewerbeimmobilien.",
             },
             {
               href: "/bueroreinigung-goettingen",
-              title: "Bueroreinigung Goettingen",
+              title: "Büroreinigung Göttingen",
               text: "Saubere Arbeitsplaetze fuer Produktivitaet, Hygiene und Kundenwirkung.",
             },
             {
               href: "/fensterreinigung-goettingen",
-              title: "Fensterreinigung Goettingen",
+              title: "Fensterreinigung Göttingen",
               text: "Streifenfreie Fensterreinigung fuer Wohnungen, Haeuser und Bueros.",
             },
             {
               href: "/grundreinigung-goettingen",
-              title: "Grundreinigung Goettingen",
+              title: "Grundreinigung Göttingen",
               text: "Intensive Tiefenreinigung fuer Neustarts, Umzuege und Sonderfaelle.",
             },
           ].map((item) => (
@@ -177,15 +177,15 @@ export default function GoettingenLandingPage() {
       <Section className="bg-white">
         <div className="mx-auto max-w-4xl">
           <Typography as="h2" variant="h2" className="mb-6 text-center">
-            Haeufige Fragen zum Reinigungsservice in Goettingen
+            Haeufige Fragen zum Reinigungsservice in Göttingen
           </Typography>
           <div className="space-y-5">
             <article className="rounded-xl border border-[#DCEFE0] p-5">
               <Typography as="h3" variant="h3" className="mb-2">
-                Welche Gebiete in Goettingen bedienen Sie?
+                Welche Gebiete in Göttingen bedienen Sie?
               </Typography>
               <Typography variant="bodyMuted">
-                Wir bedienen das Stadtgebiet Goettingen und umliegende
+                Wir bedienen das Stadtgebiet Göttingen und umliegende
                 Bereiche. Kontaktieren Sie uns kurz fuer eine schnelle
                 Verfuegbarkeitspruefung.
               </Typography>

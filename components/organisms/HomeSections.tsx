@@ -17,19 +17,19 @@ const services = [
     title: "Wohnungsreinigung",
     imageSrc: PHOTOS.services.home,
     description:
-      "Structured weekly and bi-weekly home cleaning plans with reliable teams and consistent quality control.",
+      "Strukturierte Reinigungsplaene im woechentlichen oder zweiwoechentlichen Rhythmus mit zuverlaessigen Teams und klarer Qualitaetskontrolle.",
   },
   {
     title: "Bueroreinigung",
     imageSrc: PHOTOS.services.office,
     description:
-      "Professional workspace cleaning designed to maintain hygiene, productivity, and a strong client-facing image.",
+      "Professionelle Reinigung von Arbeitsbereichen fuer Hygiene, Produktivitaet und einen ueberzeugenden Eindruck bei Kunden.",
   },
   {
     title: "Grundreinigung",
     imageSrc: PHOTOS.services.deep,
     description:
-      "Intensive top-to-bottom cleaning for move-ins, seasonal resets, and high-priority sanitation requirements.",
+      "Intensive Reinigung von oben bis unten - ideal bei Einzug, saisonalen Neustarts und besonders hohen Hygieneanforderungen.",
   },
 ];
 
@@ -37,64 +37,64 @@ const features = [
   {
     title: "Gepruefte Fachkraefte",
     description:
-      "Our trained staff follows a detailed service checklist and strict quality standards on every visit.",
+      "Unsere geschulten Mitarbeitenden arbeiten bei jedem Einsatz nach klaren Checklisten und hohen Qualitaetsstandards.",
   },
   {
     title: "Transparente Kommunikation",
     description:
-      "Fast response times, clear service updates, and dependable scheduling keep every engagement easy to manage.",
+      "Schnelle Rueckmeldungen, klare Serviceabsprachen und verlaessliche Termine machen die Zusammenarbeit einfach planbar.",
   },
   {
     title: "Umweltbewusste Mittel",
     description:
-      "We prioritize effective cleaning products that are safer for families, teams, and indoor environments.",
+      "Wir setzen auf wirksame Reinigungsprodukte, die fuer Familien, Teams und Innenraeume besser vertraeglich sind.",
   },
 ];
 
 const testimonials = [
   {
     quote:
-      "Consistent, punctual, and incredibly detail-oriented. The quality has been excellent from day one.",
+      "Zuverlaessig, puenktlich und sehr gruendlich. Die Qualitaet war vom ersten Tag an hervorragend.",
     author: "Anna M.",
-    role: "Homeowner, Berlin",
+    role: "Privatkunden, Göttingen",
     avatarSrc: PHOTOS.people.anna,
   },
   {
     quote:
-      "Our office always looks client-ready. Communication is smooth and execution is very professional.",
+      "Unser Buero ist immer sauber und repraesentativ. Kommunikation und Ausfuehrung sind absolut professionell.",
     author: "Markus M.",
-    role: "Operations Manager",
+    role: "Betriebsleiter, Göttingen",
     avatarSrc: PHOTOS.people.markus,
   },
 ];
 
 const blogPosts = [
   {
-    title: "5 Tips to Keep Your Home Fresh Between Visits",
+    title: "5 Tipps fuer ein sauberes Zuhause zwischen den Terminen",
     excerpt:
-      "Simple routines that help maintain a cleaner, healthier space all week long.",
+      "Einfache Routinen, mit denen Ihr Zuhause die ganze Woche sauber und gepflegt bleibt.",
     imageSrc: PHOTOS.blog.freshHome,
   },
   {
-    title: "Office Hygiene Standards That Boost Productivity",
+    title: "Hygienestandards im Buero, die Produktivitaet foerdern",
     excerpt:
-      "How a structured cleaning plan improves comfort and team performance.",
+      "Wie ein strukturierter Reinigungsplan Komfort und Teamleistung im Buero verbessert.",
     imageSrc: PHOTOS.blog.officeHygiene,
   },
   {
-    title: "When to Book a Deep Cleaning Service",
+    title: "Wann sich eine Grundreinigung wirklich lohnt",
     excerpt:
-      "Practical signs that your space needs a full reset beyond routine cleaning.",
+      "Praktische Hinweise, wann eine intensive Grundreinigung ueber die Routine hinaus sinnvoll ist.",
     imageSrc: PHOTOS.blog.deepWhen,
   },
 ];
 
 const localPages = [
-  { href: "/reinigungsservice-goettingen", label: "Reinigungsservice Goettingen" },
-  { href: "/gebaeudereinigung-goettingen", label: "Gebaeudereinigung Goettingen" },
-  { href: "/bueroreinigung-goettingen", label: "Bueroreinigung Goettingen" },
-  { href: "/fensterreinigung-goettingen", label: "Fensterreinigung Goettingen" },
-  { href: "/grundreinigung-goettingen", label: "Grundreinigung Goettingen" },
+  { href: "/reinigungsservice-goettingen", label: "Reinigungsservice Göttingen" },
+  { href: "/gebaeudereinigung-goettingen", label: "Gebäudereinigung Göttingen" },
+  { href: "/bueroreinigung-goettingen", label: "Büroreinigung Göttingen" },
+  { href: "/fensterreinigung-goettingen", label: "Fensterreinigung Göttingen" },
+  { href: "/grundreinigung-goettingen", label: "Grundreinigung Göttingen" },
 ];
 
 const fadeInUp = {
@@ -127,14 +127,14 @@ export function HeroSection() {
           transition={{ duration: 0.45 }}
         >
           <Typography as="p" variant="eyebrow" className="mb-4">
-            Reinigungsservice in Goettingen
+            Reinigungsservice in Göttingen
           </Typography>
           <Typography as="h1" variant="display" className="mb-5 max-w-2xl">
             Sauberkeit auf hoechstem Niveau fuer Zuhause und Buero.
           </Typography>
           <Typography variant="bodyMuted" className="mb-8 max-w-xl">
             Strukturierte Reinigungsplaene, zuverlaessige Teams und konstant
-            hohe Qualitaet fuer private und gewerbliche Kunden in Goettingen.
+            hohe Qualitaet fuer private und gewerbliche Kunden in Göttingen.
           </Typography>
           <div className="flex flex-wrap gap-4">
             <Button href="/contact" className="shadow-sm">
@@ -171,7 +171,7 @@ export function HeroSection() {
         >
           <BrandedImage
             src={PHOTOS.hero}
-            alt="Professional cleaning supplies and a tidy, bright space"
+            alt="Professionelles Reinigungsteam in einer gepflegten, hellen Umgebung"
             width={640}
             height={420}
             priority
@@ -260,7 +260,7 @@ export function TestimonialsSection() {
           Kundenstimmen
         </Typography>
         <Typography as="h2" variant="h2">
-          Vertrauen von Privat- und Firmenkunden
+          Vertrauen von Privat- und Geschaeftskunden
         </Typography>
       </div>
       <div className="grid gap-6 md:grid-cols-2">
@@ -323,10 +323,10 @@ export function LocalCoverageSection() {
     <Section className="bg-white">
       <div className="mb-10 text-center">
         <Typography as="p" variant="eyebrow" className="mb-3">
-          Goettingen Servicegebiet
+          Göttingen Servicegebiet
         </Typography>
         <Typography as="h2" variant="h2" className="mb-4">
-          Reinigungsservice in Goettingen und Umgebung
+          Reinigungsservice in Göttingen und Umgebung
         </Typography>
         <Typography variant="bodyMuted" className="mx-auto max-w-3xl">
           Finden Sie schnell die passende Leistung fuer Ihren Standort und

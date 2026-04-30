@@ -5,10 +5,10 @@ import { Section } from "../../components/atoms/Section";
 import { Typography } from "../../components/atoms/Typography";
 
 export const metadata: Metadata = {
-  title: "Fensterreinigung Goettingen",
+  title: "Fensterreinigung Göttingen",
   description:
-    "Fensterreinigung in Goettingen fuer private und gewerbliche Objekte. Reinigungsservice Dali liefert streifenfreie Ergebnisse.",
-  keywords: ["fensterreinigung goettingen", "fenster putzen goettingen"],
+    "Fensterreinigung in Göttingen fuer private und gewerbliche Objekte. Reinigungsservice Dali liefert streifenfreie Ergebnisse.",
+  keywords: ["fensterreinigung göttingen", "fenster putzen göttingen"],
   alternates: {
     canonical: "/fensterreinigung-goettingen",
   },
@@ -18,7 +18,7 @@ const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
   serviceType: "Fensterreinigung",
-  areaServed: "Goettingen",
+  areaServed: "Göttingen",
   provider: { "@type": "LocalBusiness", name: "Reinigungsservice Dali" },
 };
 
@@ -27,7 +27,7 @@ const breadcrumbSchema = {
   "@type": "BreadcrumbList",
   itemListElement: [
     { "@type": "ListItem", position: 1, name: "Start", item: "/" },
-    { "@type": "ListItem", position: 2, name: "Fensterreinigung Goettingen", item: "/fensterreinigung-goettingen" },
+    { "@type": "ListItem", position: 2, name: "Fensterreinigung Göttingen", item: "/fensterreinigung-goettingen" },
   ],
 };
 
@@ -49,10 +49,10 @@ export default function FensterreinigungPage() {
       <Section className="bg-white">
         <div className="mx-auto max-w-4xl">
           <Typography as="p" variant="eyebrow" className="mb-3">
-            Fensterreinigung Goettingen
+            Fensterreinigung Göttingen
           </Typography>
           <Typography as="h1" variant="h1" className="mb-5">
-            Streifenfreie Fensterreinigung in Goettingen
+            Streifenfreie Fensterreinigung in Göttingen
           </Typography>
           <Typography variant="bodyMuted" className="mb-6">
             Wir reinigen Fenster, Rahmen und Glasflaechen mit systematischer
