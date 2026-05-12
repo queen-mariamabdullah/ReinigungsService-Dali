@@ -9,7 +9,7 @@ type SiteShellProps = {
 const navItems = [
   { href: "/", label: "Start" },
   { href: "/reinigungsservice-goettingen", label: "Göttingen" },
-  { href: "/about", label: "Ueber uns" },
+  { href: "/about", label: "Über uns" },
   { href: "/services", label: "Leistungen" },
   { href: "/contact", label: "Kontakt" },
 ];

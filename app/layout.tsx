@@ -12,11 +12,11 @@ export const metadata: Metadata = {
     template: "%s | GöReinigungsService",
   },
   description:
-    "Professionelle Reinigungsleistungen fuer private und gewerbliche Kunden in Göttingen mit verlaesslicher Ausfuehrung.",
+    "Professionelle Reinigungsleistungen für private und gewerbliche Kunden in Göttingen mit verlässlicher Ausführung.",
   keywords: [
     "reinigungsservice göttingen",
-    "gebaeudereinigung göttingen",
-    "bueroreinigung göttingen",
+    "gebäudereinigung göttingen",
+    "büroreinigung göttingen",
     "fensterreinigung göttingen",
     "grundreinigung göttingen",
   ],
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "GöReinigungsService",
     description:
-      "Professionelle Reinigungsleistungen fuer private und gewerbliche Kunden in Göttingen mit verlaesslicher Ausfuehrung.",
+      "Professionelle Reinigungsleistungen für private und gewerbliche Kunden in Göttingen mit verlässlicher Ausführung.",
     locale: "de_DE",
     type: "website",
     images: [{ url: "/hero-main.png", width: 1024, height: 768, alt: "GöReinigungsService team at work" }],

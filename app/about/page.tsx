@@ -7,21 +7,21 @@ import {
 } from "../../components/organisms/SharedSections";
 
 export const metadata: Metadata = {
-  title: "Ueber uns",
+  title: "Über uns",
   description:
     "Lernen Sie GöReinigungsService kennen: unsere Mission, Werte und professionellen Reinigungsstandards.",
-  keywords: ["reinigungsfirma göttingen", "ueber uns goereinigungsservice"],
+  keywords: ["reinigungsfirma göttingen", "über uns goereinigungsservice"],
 };
 
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-[#F7F9F8] text-[#1A1A1A]">
       <PageIntroSection
-        eyebrow="Ueber uns"
-        title="Ein modernes Reinigungsteam, dem Sie vertrauen koennen"
-        description="Wir kombinieren verlaessliche Serviceablaeufe mit hoher Ausfuehrungsqualitaet, damit Wohn- und Gewerbeflaechen dauerhaft sauber bleiben."
+        eyebrow="Über uns"
+        title="Ein modernes Reinigungsteam, dem Sie vertrauen können"
+        description="Wir kombinieren verlässliche Serviceabläufe mit hoher Ausführungsqualität, damit Wohn- und Gewerbeflächen dauerhaft sauber bleiben."
         imageSrc={PHOTOS.aboutTeam}
-        imageAlt="Professionelles Teammeeting mit Fokus auf Qualitaet und Zuverlaessigkeit"
+        imageAlt="Professionelles Teammeeting mit Fokus auf Qualität und Zuverlässigkeit"
       />
       <AboutContentSection />
       <ProfessionalPositioningSection />

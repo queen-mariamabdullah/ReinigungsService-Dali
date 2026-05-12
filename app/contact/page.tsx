@@ -8,7 +8,7 @@ import {
 export const metadata: Metadata = {
   title: "Kontakt",
   description:
-    "Kontaktieren Sie GöReinigungsService fuer ein Angebot - per Formular, E-Mail, Telefon oder direkt in Göttingen.",
+    "Kontaktieren Sie GöReinigungsService für ein Angebot - per Formular, E-Mail, Telefon oder direkt in Göttingen.",
   keywords: ["kontakt reinigungsservice göttingen", "angebot reinigungsfirma göttingen"],
 };
 
@@ -20,7 +20,7 @@ export default function ContactPage() {
         title="Planen wir gemeinsam Ihre Reinigung"
         description="Teilen Sie uns Ihren Bedarf mit und Sie erhalten zeitnah ein klares, individuelles Angebot."
         imageSrc={PHOTOS.contactIntro}
-        imageAlt="Freundlicher Empfangsbereich fuer die Planung Ihrer Reinigung"
+        imageAlt="Freundlicher Empfangsbereich für die Planung Ihrer Reinigung"
       />
       <ContactSection />
     </main>

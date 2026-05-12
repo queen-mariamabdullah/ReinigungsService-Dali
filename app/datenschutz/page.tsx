@@ -5,7 +5,7 @@ import { Typography } from "../../components/atoms/Typography";
 export const metadata: Metadata = {
   title: "Datenschutz",
   description:
-    "Datenschutzerklaerung von GöReinigungsService gemaess DSGVO mit Informationen zur Verarbeitung personenbezogener Daten.",
+    "Datenschutzerklärung von GöReinigungsService gemäß DSGVO mit Informationen zur Verarbeitung personenbezogener Daten.",
 };
 
 export default function DatenschutzPage() {
@@ -14,7 +14,7 @@ export default function DatenschutzPage() {
       <Section className="bg-[#F7F9F8]">
         <div className="mx-auto max-w-4xl">
           <Typography as="h1" variant="h1" className="mb-6">
-            Datenschutzerklaerung
+            Datenschutzerklärung
           </Typography>
           <Typography variant="bodyMuted" className="mb-10">
             Stand: 21. April 2026
@@ -43,7 +43,7 @@ export default function DatenschutzPage() {
               <Typography variant="bodyMuted">
                 Wir verarbeiten personenbezogene Daten nur im Rahmen der
                 gesetzlichen Bestimmungen (insbesondere DSGVO und BDSG). Diese
-                Datenschutzerklaerung informiert ueber Art, Umfang und Zweck der
+                Datenschutzerklärung informiert über Art, Umfang und Zweck der
                 Verarbeitung personenbezogener Daten auf dieser Website.
               </Typography>
             </section>
@@ -57,7 +57,7 @@ export default function DatenschutzPage() {
                 automatisch Informationen in sogenannten Server-Logfiles
                 erhoben (z. B. IP-Adresse, Datum/Uhrzeit, Browsertyp,
                 Betriebssystem, Referrer-URL). Die Verarbeitung erfolgt zur
-                Gewaehrleistung von Stabilitaet und Sicherheit auf Grundlage
+                Gewährleistung von Stabilität und Sicherheit auf Grundlage
                 von Art. 6 Abs. 1 lit. f DSGVO.
               </Typography>
             </section>
@@ -67,13 +67,13 @@ export default function DatenschutzPage() {
                 4. Kontaktformular
               </Typography>
               <Typography variant="bodyMuted">
-                Wenn Sie uns ueber das Kontaktformular Anfragen senden,
+                Wenn Sie uns über das Kontaktformular Anfragen senden,
                 verarbeiten wir Ihre Angaben (Name, E-Mail-Adresse, Nachricht)
-                zur Bearbeitung der Anfrage und fuer den Fall von
+                zur Bearbeitung der Anfrage und für den Fall von
                 Anschlussfragen. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO
                 (vorvertragliche Kommunikation). Sofern Sie uns eine
-                Einwilligung ueber das Formular erteilen, erfolgt die
-                Verarbeitung zusaetzlich auf Grundlage von Art. 6 Abs. 1 lit. a
+                Einwilligung über das Formular erteilen, erfolgt die
+                Verarbeitung zusätzlich auf Grundlage von Art. 6 Abs. 1 lit. a
                 DSGVO.
               </Typography>
             </section>
@@ -85,9 +85,9 @@ export default function DatenschutzPage() {
               <Typography variant="bodyMuted">
                 Zur Abwehr automatisierter Spam-Anfragen verwenden wir technische
                 Schutzmechanismen (z. B. ein verstecktes Formularfeld und eine
-                Begrenzung der Anfragehaeufigkeit anhand der IP-Adresse). Die
+                Begrenzung der Anfragehäufigkeit anhand der IP-Adresse). Die
                 Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO
-                (berechtigtes Interesse an der Sicherheit und Funktionsfaehigkeit
+                (berechtigtes Interesse an der Sicherheit und Funktionsfähigkeit
                 unserer Website).
               </Typography>
             </section>
@@ -97,8 +97,8 @@ export default function DatenschutzPage() {
                 6. Versand der Kontaktanfrage per E-Mail
               </Typography>
               <Typography variant="bodyMuted">
-                Die ueber das Kontaktformular uebermittelten Inhalte werden zur
-                Bearbeitung Ihrer Anfrage ueber unseren E-Mail-Dienstleister
+                Die über das Kontaktformular übermittelten Inhalte werden zur
+                Bearbeitung Ihrer Anfrage über unseren E-Mail-Dienstleister
                 (SMTP-Provider) an unsere interne Kontaktadresse zugestellt.
                 Sofern eine Auftragsverarbeitung erforderlich ist, erfolgt diese
                 auf Grundlage von Art. 28 DSGVO.
@@ -112,8 +112,8 @@ export default function DatenschutzPage() {
               <Typography variant="bodyMuted">
                 Auf unserer Website ist eine Karte von Google Maps eingebunden.
                 Anbieter ist Google Ireland Limited, Gordon House, Barrow
-                Street, Dublin 4, Irland. Beim Laden der Karte koennen Daten an
-                Google uebermittelt werden (z. B. IP-Adresse). Die Karte wird
+                Street, Dublin 4, Irland. Beim Laden der Karte können Daten an
+                Google übermittelt werden (z. B. IP-Adresse). Die Karte wird
                 erst nach Ihrer aktiven Einwilligung geladen. Rechtsgrundlage
                 ist Art. 6 Abs. 1 lit. a DSGVO.
               </Typography>
@@ -124,7 +124,7 @@ export default function DatenschutzPage() {
                 8. Speicherdauer
               </Typography>
               <Typography variant="bodyMuted">
-                Wir speichern personenbezogene Daten nur so lange, wie dies fuer
+                Wir speichern personenbezogene Daten nur so lange, wie dies für
                 die jeweiligen Zwecke erforderlich ist oder gesetzliche
                 Aufbewahrungsfristen bestehen.
               </Typography>
@@ -136,10 +136,10 @@ export default function DatenschutzPage() {
               </Typography>
               <Typography variant="bodyMuted">
                 Sie haben nach den gesetzlichen Voraussetzungen das Recht auf
-                Auskunft, Berichtigung, Loeschung, Einschraenkung der
-                Verarbeitung, Datenuebertragbarkeit sowie Widerspruch gegen die
-                Verarbeitung Ihrer Daten. Zusaetzlich haben Sie das Recht auf
-                Beschwerde bei einer Datenschutzaufsichtsbehoerde.
+                Auskunft, Berichtigung, Löschung, Einschränkung der
+                Verarbeitung, Datenübertragbarkeit sowie Widerspruch gegen die
+                Verarbeitung Ihrer Daten. Zusätzlich haben Sie das Recht auf
+                Beschwerde bei einer Datenschutzaufsichtsbehörde.
               </Typography>
             </section>
 
@@ -148,7 +148,7 @@ export default function DatenschutzPage() {
                 10. Kontakt zum Datenschutz
               </Typography>
               <Typography variant="bodyMuted">
-                Bei Fragen zum Datenschutz koennen Sie uns jederzeit unter
+                Bei Fragen zum Datenschutz können Sie uns jederzeit unter
                 hello@goereinigungsservice.de kontaktieren.
               </Typography>
             </section>

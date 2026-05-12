@@ -68,8 +68,8 @@ export function AboutContentSection() {
             Wer wir sind
           </Typography>
           <Typography variant="bodyMuted">
-            Wir sind ein Reinigungsteam aus Göttingen und bieten zuverlaessige
-            Servicequalitaet fuer private und gewerbliche Kunden.
+            Wir sind ein Reinigungsteam aus Göttingen und bieten zuverlässige
+            Servicequalität für private und gewerbliche Kunden.
           </Typography>
         </article>
         <article className="rounded-2xl border border-[#E3EFE5] bg-[#F7F9F8] p-6 md:p-8">
@@ -77,8 +77,8 @@ export function AboutContentSection() {
             Auftrag
           </Typography>
           <Typography variant="bodyMuted">
-            Saubere und gesunde Raeume durch konstante Standards, transparente
-            Kommunikation und verlaessliche Ausfuehrung.
+            Saubere und gesunde Räume durch konstante Standards, transparente
+            Kommunikation und verlässliche Ausführung.
           </Typography>
         </article>
         <article className="rounded-2xl border border-[#E3EFE5] bg-[#F7F9F8] p-6 md:p-8">
@@ -86,7 +86,7 @@ export function AboutContentSection() {
             Werte
           </Typography>
           <Typography variant="bodyMuted">
-            Professionalitaet, Vertrauen und Liebe zum Detail praegen jeden
+            Professionalität, Vertrauen und Liebe zum Detail prägen jeden
             Einsatz unseres Teams.
           </Typography>
         </article>
@@ -104,8 +104,8 @@ export function ProfessionalPositioningSection() {
             Professionelle Standards
           </Typography>
           <Typography variant="bodyMuted">
-            Jeder Service folgt dokumentierten Checklisten, Qualitaetskontrollen
-            und objektspezifischen Hinweisen fuer dauerhaft verlaessliche Ergebnisse.
+            Jeder Service folgt dokumentierten Checklisten, Qualitätskontrollen
+            und objektspezifischen Hinweisen für dauerhaft verlässliche Ergebnisse.
           </Typography>
         </article>
         <article className="rounded-2xl bg-white p-6 shadow-sm md:p-8">
@@ -113,8 +113,8 @@ export function ProfessionalPositioningSection() {
             Unser Anspruch
           </Typography>
           <Typography variant="bodyMuted">
-            Wir arbeiten als Premium-Partner fuer Kunden, die Wert auf
-            Puenktlichkeit, klare Kommunikation und messbare Reinigungsqualitaet legen.
+            Wir arbeiten als Premium-Partner für Kunden, die Wert auf
+            Pünktlichkeit, klare Kommunikation und messbare Reinigungsqualität legen.
           </Typography>
         </article>
       </div>
@@ -127,19 +127,19 @@ const serviceItems = [
     title: "Wohnungsreinigung",
     imageSrc: PHOTOS.services.home,
     description:
-      "Regelmaessige Reinigungspakete fuer mehr Komfort, Hygiene und konstant saubere Wohnraeume.",
+      "Regelmäßige Reinigungspakete für mehr Komfort, Hygiene und konstant saubere Wohnräume.",
   },
   {
-    title: "Bueroreinigung",
+    title: "Büroreinigung",
     imageSrc: PHOTOS.services.office,
     description:
-      "Flexible Reinigungsplaene, damit Arbeitsplaetze sauber, repraesentativ und jederzeit einsatzbereit bleiben.",
+      "Flexible Reinigungspläne, damit Arbeitsplätze sauber, repräsentativ und jederzeit einsatzbereit bleiben.",
   },
   {
     title: "Grundreinigung",
     imageSrc: PHOTOS.services.deep,
     description:
-      "Gruendliche Intensivreinigung fuer saisonale Neustarts, nach Renovierungen und bei hohem Reinigungsbedarf.",
+      "Gründliche Intensivreinigung für saisonale Neustarts, nach Renovierungen und bei hohem Reinigungsbedarf.",
   },
 ];
 
@@ -147,17 +147,17 @@ const packages = [
   {
     name: "Basis",
     price: "Ab 89 EUR",
-    details: "Ideal fuer kleinere Wohnungen und regelmaessige Unterhaltsreinigung.",
+    details: "Ideal für kleinere Wohnungen und regelmäßige Unterhaltsreinigung.",
   },
   {
-    name: "Buero",
+    name: "Büro",
     price: "Ab 149 EUR",
-    details: "Perfekt fuer Bueroeinheiten mit woechentlicher Reinigung.",
+    details: "Perfekt für Büroeinheiten mit wöchentlicher Reinigung.",
   },
   {
     name: "Grundreinigung",
     price: "Ab 219 EUR",
-    details: "Umfassende Reinigung von oben bis unten fuer jede Objektart.",
+    details: "Umfassende Reinigung von oben bis unten für jede Objektart.",
   },
 ];
 
@@ -197,7 +197,7 @@ export function PricingPackagesSection() {
         </Typography>
         <Typography variant="bodyMuted" className="mx-auto max-w-3xl">
           Richtpreise zur Planung. Das finale Angebot wird individuell nach
-          Flaeche, Intervall und Leistungsumfang erstellt.
+          Fläche, Intervall und Leistungsumfang erstellt.
         </Typography>
       </div>
       <div className="grid gap-6 md:grid-cols-3">
@@ -228,7 +228,7 @@ export function ContactSection() {
           <div className="mb-6 overflow-hidden rounded-2xl border border-[#CFF5D2]">
             <BrandedImage
               src={PHOTOS.contact}
-              alt="Freundlicher Servicebereich mit Kontaktmoeglichkeiten"
+              alt="Freundlicher Servicebereich mit Kontaktmöglichkeiten"
               width={1000}
               height={600}
               className="h-48 w-full object-cover md:h-56"
@@ -239,7 +239,7 @@ export function ContactSection() {
             Kontaktinformationen
           </Typography>
           <Typography variant="bodyMuted" className="mb-6">
-            Kontaktieren Sie uns fuer Verfuegbarkeit, Leistungsumfang und Preisinformationen.
+            Kontaktieren Sie uns für Verfügbarkeit, Leistungsumfang und Preisinformationen.
           </Typography>
           <div className="space-y-4">
             <Typography variant="body">

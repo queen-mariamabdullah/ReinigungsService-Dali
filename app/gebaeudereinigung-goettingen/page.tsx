@@ -7,8 +7,8 @@ import { Typography } from "../../components/atoms/Typography";
 export const metadata: Metadata = {
   title: "Gebäudereinigung Göttingen",
   description:
-    "Gebaeudereinigung in Göttingen durch GöReinigungsService. Strukturierte Unterhaltsreinigung fuer Wohn- und Gewerbeobjekte.",
-  keywords: ["gebaeudereinigung göttingen", "unterhaltsreinigung göttingen"],
+    "Gebäudereinigung in Göttingen durch GöReinigungsService. Strukturierte Unterhaltsreinigung für Wohn- und Gewerbeobjekte.",
+  keywords: ["gebäudereinigung göttingen", "unterhaltsreinigung göttingen"],
   alternates: {
     canonical: "/gebaeudereinigung-goettingen",
   },
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  serviceType: "Gebaeudereinigung",
+  serviceType: "Gebäudereinigung",
   areaServed: "Göttingen",
   provider: { "@type": "LocalBusiness", name: "GöReinigungsService" },
 };
@@ -31,17 +31,17 @@ const breadcrumbSchema = {
   ],
 };
 
-export default function GebaeudereinigungPage() {
+export default function GebäudereinigungPage() {
   return (
     <main className="min-h-screen bg-[#F7F9F8] text-[#1A1A1A]">
       <Script
-        id="service-schema-gebaeudereinigung"
+        id="service-schema-gebäudereinigung"
         type="application/ld+json"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
       />
       <Script
-        id="breadcrumb-schema-gebaeudereinigung"
+        id="breadcrumb-schema-gebäudereinigung"
         type="application/ld+json"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
@@ -52,17 +52,17 @@ export default function GebaeudereinigungPage() {
             Gebäudereinigung Göttingen
           </Typography>
           <Typography as="h1" variant="h1" className="mb-5">
-            Zuverlaessige Gebaeudereinigung fuer Immobilien in Göttingen
+            Zuverlässige Gebäudereinigung für Immobilien in Göttingen
           </Typography>
           <Typography variant="bodyMuted" className="mb-6">
-            Wir reinigen Treppenhaeuser, Gemeinschaftsflaechen, Sanitairbereiche
-            und stark frequentierte Zonen mit festen Qualitaetsstandards.
+            Wir reinigen Treppenhäuser, Gemeinschaftsflächen, Sanitärbereiche
+            und stark frequentierte Zonen mit festen Qualitätsstandards.
           </Typography>
           <Typography variant="bodyMuted" className="mb-8">
             Unser Team erstellt einen klaren Reinigungsplan, abgestimmt auf
-            Objektgroesse, Nutzung und Reinigungsintervalle.
+            Objektgröße, Nutzung und Reinigungsintervalle.
           </Typography>
-          <Button href="/contact">Gebaeudereinigung anfragen</Button>
+          <Button href="/contact">Gebäudereinigung anfragen</Button>
         </div>
       </Section>
     </main>

@@ -5,7 +5,7 @@ import { Typography } from "../../components/atoms/Typography";
 export const metadata: Metadata = {
   title: "Impressum",
   description:
-    "Impressum von GöReinigungsService gemaess den gesetzlichen Pflichtangaben nach deutschem Recht.",
+    "Impressum von GöReinigungsService gemäß den gesetzlichen Pflichtangaben nach deutschem Recht.",
 };
 
 export default function ImpressumPage() {
@@ -17,7 +17,7 @@ export default function ImpressumPage() {
             Impressum
           </Typography>
           <Typography variant="bodyMuted" className="mb-10">
-            Angaben gemaess § 5 TMG
+            Angaben gemäß § 5 TMG
           </Typography>
 
           <div className="space-y-10">
@@ -58,25 +58,25 @@ export default function ImpressumPage() {
 
             <section>
               <Typography as="h2" variant="h2" className="mb-3">
-                Haftung fuer Inhalte
+                Haftung für Inhalte
               </Typography>
               <Typography variant="bodyMuted">
-                Als Diensteanbieter sind wir gemaess den allgemeinen Gesetzen
-                fuer eigene Inhalte auf diesen Seiten verantwortlich. Wir sind
-                jedoch nicht verpflichtet, uebermittelte oder gespeicherte
-                fremde Informationen zu ueberwachen oder nach Umstaenden zu
-                forschen, die auf eine rechtswidrige Taetigkeit hinweisen.
+                Als Diensteanbieter sind wir gemäß den allgemeinen Gesetzen
+                für eigene Inhalte auf diesen Seiten verantwortlich. Wir sind
+                jedoch nicht verpflichtet, übermittelte oder gespeicherte
+                fremde Informationen zu überwachen oder nach Umständen zu
+                forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
               </Typography>
             </section>
 
             <section>
               <Typography as="h2" variant="h2" className="mb-3">
-                Haftung fuer Links
+                Haftung für Links
               </Typography>
               <Typography variant="bodyMuted">
                 Unser Angebot kann Links zu externen Websites Dritter enthalten,
-                auf deren Inhalte wir keinen Einfluss haben. Deshalb koennen wir
-                fuer diese fremden Inhalte auch keine Gewaehr uebernehmen.
+                auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir
+                für diese fremden Inhalte auch keine Gewähr übernehmen.
               </Typography>
             </section>
 
@@ -87,8 +87,8 @@ export default function ImpressumPage() {
               <Typography variant="bodyMuted">
                 Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
                 diesen Seiten unterliegen dem deutschen Urheberrecht. Die
-                Vervielfaeltigung, Bearbeitung, Verbreitung und jede Art der
-                Verwertung ausserhalb der Grenzen des Urheberrechts beduerfen
+                Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
+                Verwertung außerhalb der Grenzen des Urheberrechts bedürfen
                 der schriftlichen Zustimmung des jeweiligen Autors bzw.
                 Erstellers.
               </Typography>

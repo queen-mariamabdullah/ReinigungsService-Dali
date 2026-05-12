@@ -12,11 +12,11 @@ import { Typography } from "../../components/atoms/Typography";
 export const metadata: Metadata = {
   title: "Leistungen",
   description:
-    "Entdecken Sie professionelle Wohnungs-, Buero- und Grundreinigung von GöReinigungsService.",
+    "Entdecken Sie professionelle Wohnungs-, Büro- und Grundreinigung von GöReinigungsService.",
   keywords: [
     "leistungen göttingen",
-    "gebaeudereinigung göttingen",
-    "bueroreinigung göttingen",
+    "gebäudereinigung göttingen",
+    "büroreinigung göttingen",
     "fensterreinigung göttingen",
     "grundreinigung göttingen",
   ],
@@ -27,17 +27,17 @@ export default function ServicesPage() {
     <main className="min-h-screen bg-[#F7F9F8] text-[#1A1A1A]">
       <PageIntroSection
         eyebrow="Leistungen"
-        title="Professionelle Reinigungsleistungen fuer jeden Bedarf"
-        description="Klare Servicepakete fuer private und gewerbliche Flaechen, umgesetzt mit gleichbleibend hoher Qualitaet."
+        title="Professionelle Reinigungsleistungen für jeden Bedarf"
+        description="Klare Servicepakete für private und gewerbliche Flächen, umgesetzt mit gleichbleibend hoher Qualität."
         imageSrc={PHOTOS.services.office}
-        imageAlt="Sauberer, heller Bueroraum bereit fuer professionelle Reinigung"
+        imageAlt="Sauberer, heller Büroraum bereit für professionelle Reinigung"
       />
       <ServicesGridSection />
       <PricingPackagesSection />
       <Section className="bg-white">
         <div className="mx-auto max-w-4xl">
           <Typography as="h2" variant="h2" className="mb-4 text-center">
-            Lokale Leistungsseiten fuer Göttingen
+            Lokale Leistungsseiten für Göttingen
           </Typography>
           <Typography variant="bodyMuted" className="mb-6 text-center">
             Detaillierte Informationen zu jeder Leistung in Göttingen.

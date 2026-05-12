@@ -7,7 +7,7 @@ import { Typography } from "../../components/atoms/Typography";
 export const metadata: Metadata = {
   title: "Grundreinigung Göttingen",
   description:
-    "Grundreinigung in Göttingen fuer intensive Tiefenreinigung bei Umzug, Neustart oder stark beanspruchten Flaechen.",
+    "Grundreinigung in Göttingen für intensive Tiefenreinigung bei Umzug, Neustart oder stark beanspruchten Flächen.",
   keywords: ["grundreinigung göttingen", "tiefenreinigung göttingen"],
   alternates: {
     canonical: "/grundreinigung-goettingen",
@@ -52,14 +52,14 @@ export default function GrundreinigungPage() {
             Grundreinigung Göttingen
           </Typography>
           <Typography as="h1" variant="h1" className="mb-5">
-            Intensiv-Grundreinigung fuer Göttingen
+            Intensiv-Grundreinigung für Göttingen
           </Typography>
           <Typography variant="bodyMuted" className="mb-6">
-            Unsere Grundreinigung entfernt hartnaeckige Rueckstaende und
-            reinigt stark beanspruchte Flaechen bis in die Details.
+            Unsere Grundreinigung entfernt hartnäckige Rückstände und
+            reinigt stark beanspruchte Flächen bis in die Details.
           </Typography>
           <Typography variant="bodyMuted" className="mb-8">
-            Besonders sinnvoll bei Einzug, Auszug, Fruehjahrsreinigung oder
+            Besonders sinnvoll bei Einzug, Auszug, Frühjahrsreinigung oder
             nach Bau- und Renovierungsarbeiten.
           </Typography>
           <Button href="/contact">Grundreinigung anfragen</Button>

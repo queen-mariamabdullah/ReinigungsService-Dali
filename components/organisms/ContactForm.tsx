@@ -94,7 +94,7 @@ export function ContactForm() {
         <Textarea
           id="message"
           name="message"
-          placeholder="Wie koennen wir Ihnen helfen?"
+          placeholder="Wie können wir Ihnen helfen?"
           required
         />
       </div>
@@ -110,7 +110,7 @@ export function ContactForm() {
         <span>
           Ich habe die{" "}
           <Link href="/datenschutz" className="font-semibold text-[#1F5F4A] underline">
-            Datenschutzerklaerung
+            Datenschutzerklärung
           </Link>{" "}
           gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage
           zu.
@@ -121,7 +121,7 @@ export function ContactForm() {
       </Button>
       {state === "success" ? (
         <Typography variant="bodyMuted">
-          Vielen Dank. Ihre Anfrage wurde uebermittelt. Wir melden uns zeitnah bei Ihnen.
+          Vielen Dank. Ihre Anfrage wurde übermittelt. Wir melden uns zeitnah bei Ihnen.
         </Typography>
       ) : null}
       {errorMessage ? <Typography variant="bodyMuted">{errorMessage}</Typography> : null}

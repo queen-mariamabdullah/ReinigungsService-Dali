@@ -10,12 +10,12 @@ import { BrandedImage } from "../../components/molecules/BrandedImage";
 export const metadata: Metadata = {
   title: "Reinigungsservice Göttingen",
   description:
-    "GöReinigungsService ist Ihr Partner fuer Reinigungsservice in Göttingen: Gebaeudereinigung, Bueroreinigung, Fensterreinigung und Grundreinigung.",
+    "GöReinigungsService ist Ihr Partner für Reinigungsservice in Göttingen: Gebäudereinigung, Büroreinigung, Fensterreinigung und Grundreinigung.",
   keywords: [
     "reinigungsservice göttingen",
     "reinigungsfirma göttingen",
-    "gebaeudereinigung göttingen",
-    "bueroreinigung göttingen",
+    "gebäudereinigung göttingen",
+    "büroreinigung göttingen",
   ],
   alternates: {
     canonical: "/reinigungsservice-goettingen",
@@ -31,7 +31,7 @@ const faqSchema = {
       name: "Welche Leistungen bietet Ihr Reinigungsservice in Göttingen?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Wir bieten Gebaeudereinigung, Bueroreinigung, Fensterreinigung und Grundreinigung fuer private und gewerbliche Kunden in Göttingen.",
+        text: "Wir bieten Gebäudereinigung, Büroreinigung, Fensterreinigung und Grundreinigung für private und gewerbliche Kunden in Göttingen.",
       },
     },
     {
@@ -44,10 +44,10 @@ const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Sind regelmaessige Reinigungsplaene moeglich?",
+      name: "Sind regelmäßige Reinigungspläne möglich?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ja, wir erstellen individuelle Reinigungsplaene fuer woechentliche, zweiwoechentliche oder flexible Einsaetze.",
+        text: "Ja, wir erstellen individuelle Reinigungspläne für wöchentliche, zweiwöchentliche oder flexible Einsätze.",
       },
     },
   ],
@@ -102,9 +102,9 @@ export default function GoettingenLandingPage() {
               Ihr professioneller Reinigungsservice in Göttingen
             </Typography>
             <Typography variant="bodyMuted" className="mb-8">
-              GöReinigungsService bietet zuverlaessige Reinigung fuer Wohn-
-              und Gewerbeflaechen in Göttingen. Wir arbeiten mit klaren
-              Checklisten, festen Standards und messbarer Qualitaet.
+              GöReinigungsService bietet zuverlässige Reinigung für Wohn-
+              und Gewerbeflächen in Göttingen. Wir arbeiten mit klaren
+              Checklisten, festen Standards und messbarer Qualität.
             </Typography>
             <div className="flex flex-wrap gap-4">
               <Button href="/contact">Jetzt Angebot anfragen</Button>
@@ -133,7 +133,7 @@ export default function GoettingenLandingPage() {
             Unsere Reinigungsleistungen in Göttingen
           </Typography>
           <Typography variant="bodyMuted" className="mx-auto max-w-3xl">
-            Waehlbare Servicebausteine fuer Privatkunden, Bueros und
+            Wählbare Servicebausteine für Privatkunden, Büros und
             gewerbliche Objekte.
           </Typography>
         </div>
@@ -142,22 +142,22 @@ export default function GoettingenLandingPage() {
             {
               href: "/gebaeudereinigung-goettingen",
               title: "Gebäudereinigung Göttingen",
-              text: "Regelmaessige Unterhaltsreinigung fuer Wohn- und Gewerbeimmobilien.",
+              text: "Regelmäßige Unterhaltsreinigung für Wohn- und Gewerbeimmobilien.",
             },
             {
               href: "/bueroreinigung-goettingen",
               title: "Büroreinigung Göttingen",
-              text: "Saubere Arbeitsplaetze fuer Produktivitaet, Hygiene und Kundenwirkung.",
+              text: "Saubere Arbeitsplätze für Produktivität, Hygiene und Kundenwirkung.",
             },
             {
               href: "/fensterreinigung-goettingen",
               title: "Fensterreinigung Göttingen",
-              text: "Streifenfreie Fensterreinigung fuer Wohnungen, Haeuser und Bueros.",
+              text: "Streifenfreie Fensterreinigung für Wohnungen, Häuser und Büros.",
             },
             {
               href: "/grundreinigung-goettingen",
               title: "Grundreinigung Göttingen",
-              text: "Intensive Tiefenreinigung fuer Neustarts, Umzuege und Sonderfaelle.",
+              text: "Intensive Tiefenreinigung für Neustarts, Umzüge und Sonderfälle.",
             },
           ].map((item) => (
             <Link
@@ -177,7 +177,7 @@ export default function GoettingenLandingPage() {
       <Section className="bg-white">
         <div className="mx-auto max-w-4xl">
           <Typography as="h2" variant="h2" className="mb-6 text-center">
-            Haeufige Fragen zum Reinigungsservice in Göttingen
+            Häufige Fragen zum Reinigungsservice in Göttingen
           </Typography>
           <div className="space-y-5">
             <article className="rounded-xl border border-[#DCEFE0] p-5">
@@ -186,8 +186,8 @@ export default function GoettingenLandingPage() {
               </Typography>
               <Typography variant="bodyMuted">
                 Wir bedienen das Stadtgebiet Göttingen und umliegende
-                Bereiche. Kontaktieren Sie uns kurz fuer eine schnelle
-                Verfuegbarkeitspruefung.
+                Bereiche. Kontaktieren Sie uns kurz für eine schnelle
+                Verfügbarkeitsprüfung.
               </Typography>
             </article>
             <article className="rounded-xl border border-[#DCEFE0] p-5">
@@ -195,7 +195,7 @@ export default function GoettingenLandingPage() {
                 Arbeiten Sie mit festen Teams?
               </Typography>
               <Typography variant="bodyMuted">
-                Ja, wo moeglich planen wir feste Teams ein, damit Qualitaet und
+                Ja, wo möglich planen wir feste Teams ein, damit Qualität und
                 Kommunikation langfristig stabil bleiben.
               </Typography>
             </article>

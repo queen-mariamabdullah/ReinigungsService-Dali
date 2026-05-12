@@ -4,11 +4,11 @@ import { HomePage } from "../components/layout/HomePage";
 export const metadata: Metadata = {
   title: "Reinigungsservice Göttingen | GöReinigungsService",
   description:
-    "Reinigungsservice in Göttingen fuer Zuhause und Buero. GöReinigungsService bietet Gebaeudereinigung, Bueroreinigung, Fensterreinigung und Grundreinigung.",
+    "Reinigungsservice in Göttingen für Zuhause und Büro. GöReinigungsService bietet Gebäudereinigung, Büroreinigung, Fensterreinigung und Grundreinigung.",
   keywords: [
     "reinigungsservice göttingen",
-    "gebaeudereinigung göttingen",
-    "bueroreinigung göttingen",
+    "gebäudereinigung göttingen",
+    "büroreinigung göttingen",
     "fensterreinigung göttingen",
     "grundreinigung göttingen",
     "reinigungsfirma göttingen",

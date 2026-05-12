@@ -41,7 +41,7 @@ export async function POST(request: Request) {
   try {
     payload = (await request.json()) as ContactPayload;
   } catch {
-    return NextResponse.json({ error: "Ungueltige Anfrage." }, { status: 400 });
+    return NextResponse.json({ error: "Ungültige Anfrage." }, { status: 400 });
   }
 
   const name = payload.name?.trim();
@@ -53,7 +53,7 @@ export async function POST(request: Request) {
 
   if (isRateLimited(ip)) {
     return NextResponse.json(
-      { error: "Zu viele Anfragen. Bitte versuchen Sie es spaeter erneut." },
+      { error: "Zu viele Anfragen. Bitte versuchen Sie es später erneut." },
       { status: 429 },
     );
   }
@@ -65,14 +65,14 @@ export async function POST(request: Request) {
 
   if (!name || name.length < 2) {
     return NextResponse.json(
-      { error: "Bitte geben Sie einen gueltigen Namen ein." },
+      { error: "Bitte geben Sie einen gültigen Namen ein." },
       { status: 400 },
     );
   }
 
   if (!email || !isValidEmail(email)) {
     return NextResponse.json(
-      { error: "Bitte geben Sie eine gueltige E-Mail-Adresse ein." },
+      { error: "Bitte geben Sie eine gültige E-Mail-Adresse ein." },
       { status: 400 },
     );
   }
@@ -86,7 +86,7 @@ export async function POST(request: Request) {
 
   if (!privacyConsent) {
     return NextResponse.json(
-      { error: "Bitte stimmen Sie der Datenschutzerklaerung zu." },
+      { error: "Bitte stimmen Sie der Datenschutzerklärung zu." },
       { status: 400 },
     );
   }
@@ -98,7 +98,7 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         error:
-          "Ihre Anfrage konnte aktuell nicht zugestellt werden. Bitte versuchen Sie es spaeter erneut.",
+          "Ihre Anfrage konnte aktuell nicht zugestellt werden. Bitte versuchen Sie es später erneut.",
       },
       { status: 500 },
     );

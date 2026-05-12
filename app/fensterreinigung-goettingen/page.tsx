@@ -7,7 +7,7 @@ import { Typography } from "../../components/atoms/Typography";
 export const metadata: Metadata = {
   title: "Fensterreinigung Göttingen",
   description:
-    "Fensterreinigung in Göttingen fuer private und gewerbliche Objekte. GöReinigungsService liefert streifenfreie Ergebnisse.",
+    "Fensterreinigung in Göttingen für private und gewerbliche Objekte. GöReinigungsService liefert streifenfreie Ergebnisse.",
   keywords: ["fensterreinigung göttingen", "fenster putzen göttingen"],
   alternates: {
     canonical: "/fensterreinigung-goettingen",
@@ -55,11 +55,11 @@ export default function FensterreinigungPage() {
             Streifenfreie Fensterreinigung in Göttingen
           </Typography>
           <Typography variant="bodyMuted" className="mb-6">
-            Wir reinigen Fenster, Rahmen und Glasflaechen mit systematischer
-            Vorgehensweise fuer ein klares Ergebnis.
+            Wir reinigen Fenster, Rahmen und Glasflächen mit systematischer
+            Vorgehensweise für ein klares Ergebnis.
           </Typography>
           <Typography variant="bodyMuted" className="mb-8">
-            Ideal fuer Wohnungen, Haeuser, Praxen und Bueros mit regelmaessigem
+            Ideal für Wohnungen, Häuser, Praxen und Büros mit regelmäßigem
             Reinigungsbedarf.
           </Typography>
           <Button href="/contact">Fensterreinigung anfragen</Button>
