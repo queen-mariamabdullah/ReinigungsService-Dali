@@ -130,7 +130,7 @@ export function HeroSection() {
             Reinigungsservice in Göttingen
           </Typography>
           <Typography as="h1" variant="display" className="mb-5 max-w-2xl">
-            Sauberkeit auf hoechstem Niveau fuer Zuhause und Buero.
+            Sauberkeit auf Höchstem Niveau für Zuhause und Büro
           </Typography>
           <Typography variant="bodyMuted" className="mb-8 max-w-xl">
             Strukturierte Reinigungsplaene, zuverlaessige Teams und konstant
