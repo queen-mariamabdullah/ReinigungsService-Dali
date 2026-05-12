@@ -19,7 +19,7 @@ export function BrandedImage({
   className = "",
   sizes,
   priority = false,
-  brandName = "Reinigungsservice Dali",
+  brandName = "GöReinigungsService",
 }: BrandedImageProps) {
   return (
     <div className="relative">

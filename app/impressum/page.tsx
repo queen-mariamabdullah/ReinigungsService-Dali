@@ -5,7 +5,7 @@ import { Typography } from "../../components/atoms/Typography";
 export const metadata: Metadata = {
   title: "Impressum",
   description:
-    "Impressum von Reinigungsservice Dali gemaess den gesetzlichen Pflichtangaben nach deutschem Recht.",
+    "Impressum von GöReinigungsService gemaess den gesetzlichen Pflichtangaben nach deutschem Recht.",
 };
 
 export default function ImpressumPage() {
@@ -26,7 +26,7 @@ export default function ImpressumPage() {
                 Diensteanbieter
               </Typography>
               <Typography variant="bodyMuted">
-                Reinigungsservice Dali
+                GöReinigungsService
                 <br />
                 Theodor-Heuss-Str.11
                 <br />
@@ -43,7 +43,7 @@ export default function ImpressumPage() {
               <Typography variant="bodyMuted">
                 Telefon: +49 30 1234567
                 <br />
-                E-Mail: hello@reinigung-dali.de
+                E-Mail: hello@goereinigungsservice.de
               </Typography>
             </section>
 
@@ -52,7 +52,7 @@ export default function ImpressumPage() {
                 Vertreten durch
               </Typography>
               <Typography variant="bodyMuted">
-                Inhaber: Dali
+                GöReinigungsService
               </Typography>
             </section>
 

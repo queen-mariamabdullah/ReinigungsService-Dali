@@ -243,7 +243,7 @@ export function ContactSection() {
           </Typography>
           <div className="space-y-4">
             <Typography variant="body">
-              <span className="font-semibold">E-Mail:</span> hello@reinigung-dali.de
+              <span className="font-semibold">E-Mail:</span> hello@goereinigungsservice.de
             </Typography>
             <Typography variant="body">
               <span className="font-semibold">Telefon:</span> +49 30 1234567

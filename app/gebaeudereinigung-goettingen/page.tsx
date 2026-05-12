@@ -7,7 +7,7 @@ import { Typography } from "../../components/atoms/Typography";
 export const metadata: Metadata = {
   title: "Gebäudereinigung Göttingen",
   description:
-    "Gebaeudereinigung in Göttingen durch Reinigungsservice Dali. Strukturierte Unterhaltsreinigung fuer Wohn- und Gewerbeobjekte.",
+    "Gebaeudereinigung in Göttingen durch GöReinigungsService. Strukturierte Unterhaltsreinigung fuer Wohn- und Gewerbeobjekte.",
   keywords: ["gebaeudereinigung göttingen", "unterhaltsreinigung göttingen"],
   alternates: {
     canonical: "/gebaeudereinigung-goettingen",
@@ -19,7 +19,7 @@ const serviceSchema = {
   "@type": "Service",
   serviceType: "Gebaeudereinigung",
   areaServed: "Göttingen",
-  provider: { "@type": "LocalBusiness", name: "Reinigungsservice Dali" },
+  provider: { "@type": "LocalBusiness", name: "GöReinigungsService" },
 };
 
 const breadcrumbSchema = {

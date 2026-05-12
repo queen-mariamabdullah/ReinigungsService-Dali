@@ -9,8 +9,8 @@ import {
 export const metadata: Metadata = {
   title: "Ueber uns",
   description:
-    "Lernen Sie Reinigungsservice Dali kennen: unsere Mission, Werte und professionellen Reinigungsstandards.",
-  keywords: ["reinigungsfirma göttingen", "ueber uns reinigungsservice dali"],
+    "Lernen Sie GöReinigungsService kennen: unsere Mission, Werte und professionellen Reinigungsstandards.",
+  keywords: ["reinigungsfirma göttingen", "ueber uns goereinigungsservice"],
 };
 
 export default function AboutPage() {

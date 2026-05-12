@@ -5,7 +5,7 @@ import { Typography } from "../../components/atoms/Typography";
 export const metadata: Metadata = {
   title: "Datenschutz",
   description:
-    "Datenschutzerklaerung von Reinigungsservice Dali gemaess DSGVO mit Informationen zur Verarbeitung personenbezogener Daten.",
+    "Datenschutzerklaerung von GöReinigungsService gemaess DSGVO mit Informationen zur Verarbeitung personenbezogener Daten.",
 };
 
 export default function DatenschutzPage() {
@@ -26,11 +26,11 @@ export default function DatenschutzPage() {
                 1. Verantwortlicher
               </Typography>
               <Typography variant="bodyMuted">
-                Reinigungsservice Dali
+                GöReinigungsService
                 <br />
                 Theodor-Heuss-Str.11, 37075 Göttingen
                 <br />
-                E-Mail: hello@reinigung-dali.de
+                E-Mail: hello@goereinigungsservice.de
                 <br />
                 Telefon: +49 30 1234567
               </Typography>
@@ -149,7 +149,7 @@ export default function DatenschutzPage() {
               </Typography>
               <Typography variant="bodyMuted">
                 Bei Fragen zum Datenschutz koennen Sie uns jederzeit unter
-                hello@reinigung-dali.de kontaktieren.
+                hello@goereinigungsservice.de kontaktieren.
               </Typography>
             </section>
           </div>

@@ -8,8 +8,8 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   ),
   title: {
-    default: "Reinigungsservice Dali",
-    template: "%s | Reinigungsservice Dali",
+    default: "GöReinigungsService",
+    template: "%s | GöReinigungsService",
   },
   description:
     "Professionelle Reinigungsleistungen fuer private und gewerbliche Kunden in Göttingen mit verlaesslicher Ausfuehrung.",
@@ -21,21 +21,21 @@ export const metadata: Metadata = {
     "grundreinigung göttingen",
   ],
   category: "Reinigungsdienstleistungen",
-  authors: [{ name: "Reinigungsservice Dali" }],
+  authors: [{ name: "GöReinigungsService" }],
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Reinigungsservice Dali",
+    title: "GöReinigungsService",
     description:
       "Professionelle Reinigungsleistungen fuer private und gewerbliche Kunden in Göttingen mit verlaesslicher Ausfuehrung.",
     locale: "de_DE",
     type: "website",
-    images: [{ url: "/hero-main.png", width: 1024, height: 768, alt: "Reinigungsservice Dali team at work" }],
+    images: [{ url: "/hero-main.png", width: 1024, height: 768, alt: "GöReinigungsService team at work" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Reinigungsservice Dali",
+    title: "GöReinigungsService",
     description:
       "Professionelle Reinigungsleistungen in Göttingen.",
     images: ["/hero-main.png"],
@@ -58,10 +58,10 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              name: "Reinigungsservice Dali",
+              name: "GöReinigungsService",
               image: "/hero-main.png",
               telephone: "+49 30 1234567",
-              email: "hello@reinigung-dali.de",
+              email: "hello@goereinigungsservice.de",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Theodor-Heuss-Str.11",

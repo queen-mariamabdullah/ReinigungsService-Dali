@@ -8,7 +8,7 @@ import {
 export const metadata: Metadata = {
   title: "Kontakt",
   description:
-    "Kontaktieren Sie Reinigungsservice Dali fuer ein Angebot - per Formular, E-Mail, Telefon oder direkt in Göttingen.",
+    "Kontaktieren Sie GöReinigungsService fuer ein Angebot - per Formular, E-Mail, Telefon oder direkt in Göttingen.",
   keywords: ["kontakt reinigungsservice göttingen", "angebot reinigungsfirma göttingen"],
 };
 

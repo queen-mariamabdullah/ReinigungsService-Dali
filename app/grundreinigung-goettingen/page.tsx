@@ -19,7 +19,7 @@ const serviceSchema = {
   "@type": "Service",
   serviceType: "Grundreinigung",
   areaServed: "Göttingen",
-  provider: { "@type": "LocalBusiness", name: "Reinigungsservice Dali" },
+  provider: { "@type": "LocalBusiness", name: "GöReinigungsService" },
 };
 
 const breadcrumbSchema = {

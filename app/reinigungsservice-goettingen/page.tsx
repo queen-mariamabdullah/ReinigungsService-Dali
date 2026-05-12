@@ -10,7 +10,7 @@ import { BrandedImage } from "../../components/molecules/BrandedImage";
 export const metadata: Metadata = {
   title: "Reinigungsservice Göttingen",
   description:
-    "Reinigungsservice Dali ist Ihr Partner fuer Reinigungsservice in Göttingen: Gebaeudereinigung, Bueroreinigung, Fensterreinigung und Grundreinigung.",
+    "GöReinigungsService ist Ihr Partner fuer Reinigungsservice in Göttingen: Gebaeudereinigung, Bueroreinigung, Fensterreinigung und Grundreinigung.",
   keywords: [
     "reinigungsservice göttingen",
     "reinigungsfirma göttingen",
@@ -58,7 +58,7 @@ const serviceSchema = {
   "@type": "Service",
   serviceType: "Reinigungsservice",
   areaServed: "Göttingen",
-  provider: { "@type": "LocalBusiness", name: "Reinigungsservice Dali" },
+  provider: { "@type": "LocalBusiness", name: "GöReinigungsService" },
 };
 
 const breadcrumbSchema = {
@@ -102,7 +102,7 @@ export default function GoettingenLandingPage() {
               Ihr professioneller Reinigungsservice in Göttingen
             </Typography>
             <Typography variant="bodyMuted" className="mb-8">
-              Reinigungsservice Dali bietet zuverlaessige Reinigung fuer Wohn-
+              GöReinigungsService bietet zuverlaessige Reinigung fuer Wohn-
               und Gewerbeflaechen in Göttingen. Wir arbeiten mit klaren
               Checklisten, festen Standards und messbarer Qualitaet.
             </Typography>
@@ -116,7 +116,7 @@ export default function GoettingenLandingPage() {
           <div className="overflow-hidden rounded-2xl border border-[#CFF5D2] bg-[#F7F9F8] p-4">
             <BrandedImage
               src={PHOTOS.hero}
-              alt="Reinigungsservice Dali in Göttingen bei der professionellen Reinigung"
+              alt="GöReinigungsService in Göttingen bei der professionellen Reinigung"
               width={900}
               height={620}
               priority

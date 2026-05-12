@@ -12,7 +12,7 @@ import { Typography } from "../../components/atoms/Typography";
 export const metadata: Metadata = {
   title: "Leistungen",
   description:
-    "Entdecken Sie professionelle Wohnungs-, Buero- und Grundreinigung von Reinigungsservice Dali.",
+    "Entdecken Sie professionelle Wohnungs-, Buero- und Grundreinigung von GöReinigungsService.",
   keywords: [
     "leistungen göttingen",
     "gebaeudereinigung göttingen",
