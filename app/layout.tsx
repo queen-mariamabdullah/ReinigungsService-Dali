@@ -31,14 +31,21 @@ export const metadata: Metadata = {
       "Professionelle Reinigungsleistungen für private und gewerbliche Kunden in Göttingen mit verlässlicher Ausführung.",
     locale: "de_DE",
     type: "website",
-    images: [{ url: "/hero-main.png", width: 1024, height: 768, alt: "GöReinigungsService team at work" }],
+    images: [
+      {
+        url: "/goereinigungsservice-hero-main.svg",
+        width: 640,
+        height: 420,
+        alt: "GöReinigungsService team at work",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "GöReinigungsService",
     description:
       "Professionelle Reinigungsleistungen in Göttingen.",
-    images: ["/hero-main.png"],
+    images: ["/goereinigungsservice-hero-main.svg"],
   },
 };
 
@@ -59,7 +66,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "GöReinigungsService",
-              image: "/hero-main.png",
+              image: "/goereinigungsservice-hero-main.svg",
               telephone: "+49 30 1234567",
               email: "hello@goereinigungsservice.de",
               address: {
