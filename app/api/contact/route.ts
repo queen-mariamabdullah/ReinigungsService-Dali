@@ -98,7 +98,7 @@ export async function POST(request: Request) {
     return NextResponse.json(
       {
         error:
-          "Ihre Anfrage konnte aktuell nicht zugestellt werden. Bitte versuchen Sie es später erneut.",
+          "Ihre Anfrage konnte aktuell nicht übermittelt werden. Bitte versuchen Sie es später erneut.",
       },
       { status: 500 },
     );

@@ -28,7 +28,7 @@ export default function DatenschutzPage() {
               <Typography variant="bodyMuted">
                 GöReinigungsService
                 <br />
-                Theodor-Heuss-Str.11, 37075 Göttingen
+                Theodor-Heuss-Str. 11, 37075 Göttingen
                 <br />
                 E-Mail: hello@goereinigungsservice.de
                 <br />
@@ -80,7 +80,7 @@ export default function DatenschutzPage() {
 
             <section>
               <Typography as="h2" variant="h2" className="mb-3">
-                5. Technische Schutzmassnahmen beim Formular
+                5. Technische Schutzmaßnahmen beim Formular
               </Typography>
               <Typography variant="bodyMuted">
                 Zur Abwehr automatisierter Spam-Anfragen verwenden wir technische
@@ -99,7 +99,7 @@ export default function DatenschutzPage() {
               <Typography variant="bodyMuted">
                 Die über das Kontaktformular übermittelten Inhalte werden zur
                 Bearbeitung Ihrer Anfrage über unseren E-Mail-Dienstleister
-                (SMTP-Provider) an unsere interne Kontaktadresse zugestellt.
+                (SMTP-Provider) an unsere interne Kontaktadresse übermittelt.
                 Sofern eine Auftragsverarbeitung erforderlich ist, erfolgt diese
                 auf Grundlage von Art. 28 DSGVO.
               </Typography>

@@ -71,7 +71,7 @@ export default function RootLayout({
               email: "hello@goereinigungsservice.de",
               address: {
                 "@type": "PostalAddress",
-                streetAddress: "Theodor-Heuss-Str.11",
+                streetAddress: "Theodor-Heuss-Str. 11",
                 postalCode: "37075",
                 addressLocality: "Göttingen",
                 addressCountry: "DE",

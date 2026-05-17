@@ -28,7 +28,7 @@ export default function ImpressumPage() {
               <Typography variant="bodyMuted">
                 GöReinigungsService
                 <br />
-                Theodor-Heuss-Str.11
+                Theodor-Heuss-Str. 11
                 <br />
                 37075 Göttingen
                 <br />

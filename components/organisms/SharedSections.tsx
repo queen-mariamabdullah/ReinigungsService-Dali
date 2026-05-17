@@ -249,13 +249,13 @@ export function ContactSection() {
               <span className="font-semibold">Telefon:</span> +49 30 1234567
             </Typography>
             <Typography variant="body">
-              <span className="font-semibold">Adresse:</span> Theodor-Heuss-Str.11, 37075 Göttingen
+              <span className="font-semibold">Adresse:</span> Theodor-Heuss-Str. 11, 37075 Göttingen
             </Typography>
           </div>
           <div className="mt-8 overflow-hidden rounded-2xl border border-[#CFF5D2]">
             <ConsentMapEmbed
               title="Karte Göttingen"
-              src="https://www.google.com/maps?q=Theodor-Heuss-Str.11%2C37075%20Goettingen&z=15&output=embed"
+              src="https://www.google.com/maps?q=Theodor-Heuss-Str.%2011%2C37075%20G%C3%B6ttingen&z=15&output=embed"
             />
           </div>
         </article>

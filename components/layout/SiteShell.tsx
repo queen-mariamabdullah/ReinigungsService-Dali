@@ -27,7 +27,7 @@ export function SiteShell({ children }: SiteShellProps) {
           <Link href="/" className="text-lg font-bold tracking-tight text-[#1F5F4A]">
             GöReinigungsService
           </Link>
-          <nav className="hidden items-center gap-6 md:flex" aria-label="Main navigation">
+          <nav className="hidden items-center gap-6 md:flex" aria-label="Hauptnavigation">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -44,7 +44,7 @@ export function SiteShell({ children }: SiteShellProps) {
         </div>
         <nav
           className="mx-auto flex w-full max-w-7xl flex-wrap gap-4 px-4 pb-4 md:hidden"
-          aria-label="Mobile navigation"
+          aria-label="Mobile Navigation"
         >
           {navItems.map((item) => (
             <Link
@@ -62,7 +62,7 @@ export function SiteShell({ children }: SiteShellProps) {
 
       <footer className="border-t border-[#CFF5D2] bg-white">
         <div className="mx-auto flex w-full max-w-7xl flex-col gap-4 px-4 py-10 text-sm text-[#6B7280] md:flex-row md:items-center md:justify-between md:px-6">
-          <p>© {new Date().getFullYear()} GöReinigungsService. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} GöReinigungsService. Alle Rechte vorbehalten.</p>
           <div className="flex flex-wrap gap-5">
             {navItems.map((item) => (
               <Link key={item.href} href={item.href} className="transition hover:text-[#1F5F4A]">
