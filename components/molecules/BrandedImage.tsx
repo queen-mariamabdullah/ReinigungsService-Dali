@@ -21,6 +21,8 @@ export function BrandedImage({
   priority = false,
   brandName = "GöReinigungsService",
 }: BrandedImageProps) {
+  const isSvg = src.endsWith(".svg");
+
   return (
     <div className="relative">
       <Image
@@ -31,6 +33,7 @@ export function BrandedImage({
         className={className}
         sizes={sizes}
         priority={priority}
+        unoptimized={isSvg}
       />
       <div className="pointer-events-none absolute right-3 top-3 rounded-lg bg-[#1A1A1A]/70 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-white backdrop-blur-sm md:text-xs">
         {brandName}

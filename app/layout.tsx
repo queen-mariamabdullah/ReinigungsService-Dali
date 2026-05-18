@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/GöReinigungsService-hero-main.svg",
+        url: "/goereinigungsservice-hero-main.svg",
         width: 640,
         height: 420,
         alt: "GöReinigungsService team at work",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     title: "GöReinigungsService",
     description:
       "Professionelle Reinigungsleistungen in Göttingen.",
-    images: ["/GöReinigungsService-hero-main.svg"],
+    images: ["/goereinigungsservice-hero-main.svg"],
   },
 };
 
@@ -66,7 +66,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "GöReinigungsService",
-              image: "/GöReinigungsService-hero-main.svg",
+              image: "/goereinigungsservice-hero-main.svg",
               telephone: "+49 30 1234567",
               email: "hello@goereinigungsservice.de",
               address: {

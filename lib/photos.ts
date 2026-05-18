@@ -1,17 +1,17 @@
 /**
- * Local marketing images in /public use the GöReinigungsService- filename prefix.
- * Unsplash URLs remain for blog/people.
+ * Local marketing images in /public use ASCII filenames (goereinigungsservice-*)
+ * for reliable hosting. Unsplash URLs remain for blog/people.
  */
 export const PHOTOS = {
-  hero: "/GöReinigungsService-hero-main.svg",
+  hero: "/goereinigungsservice-hero-main.svg",
   aboutTeam:
     "https://images.unsplash.com/photo-1600880292203-757bb62b4b99?auto=format&fit=crop&w=1400&q=80",
-  contact: "/GöReinigungsService-contact-main.svg",
-  contactIntro: "/GöReinigungsService-contact-main.svg",
+  contact: "/goereinigungsservice-contact-main.svg",
+  contactIntro: "/goereinigungsservice-contact-main.svg",
   services: {
-    home: "/GöReinigungsService-service-home-cleaning.svg",
-    office: "/GöReinigungsService-service-office-cleaning.svg",
-    deep: "/GöReinigungsService-service-deep-cleaning.svg",
+    home: "/goereinigungsservice-service-home-cleaning.svg",
+    office: "/goereinigungsservice-service-office-cleaning.svg",
+    deep: "/goereinigungsservice-service-deep-cleaning.svg",
   },
   blog: {
     freshHome:
