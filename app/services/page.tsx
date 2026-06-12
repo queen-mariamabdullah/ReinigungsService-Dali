@@ -12,7 +12,7 @@ import { Typography } from "../../components/atoms/Typography";
 export const metadata: Metadata = {
   title: "Leistungen",
   description:
-    "Entdecken Sie professionelle Wohnungs-, Büro- und Grundreinigung von GöReinigungsService.",
+    "Entdecken Sie professionelle Wohnungs-, Büro- und Grundreinigung von ReinigungsService-Göttingen.",
   keywords: [
     "leistungen göttingen",
     "gebäudereinigung göttingen",

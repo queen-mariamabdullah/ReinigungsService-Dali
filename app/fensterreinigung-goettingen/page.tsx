@@ -7,7 +7,7 @@ import { Typography } from "../../components/atoms/Typography";
 export const metadata: Metadata = {
   title: "Fensterreinigung Göttingen",
   description:
-    "Fensterreinigung in Göttingen für private und gewerbliche Objekte. GöReinigungsService liefert streifenfreie Ergebnisse.",
+    "Fensterreinigung in Göttingen für private und gewerbliche Objekte. ReinigungsService-Göttingen liefert streifenfreie Ergebnisse.",
   keywords: ["fensterreinigung göttingen", "fenster putzen göttingen"],
   alternates: {
     canonical: "/fensterreinigung-goettingen",
@@ -19,7 +19,7 @@ const serviceSchema = {
   "@type": "Service",
   serviceType: "Fensterreinigung",
   areaServed: "Göttingen",
-  provider: { "@type": "LocalBusiness", name: "GöReinigungsService" },
+  provider: { "@type": "LocalBusiness", name: "ReinigungsService-Göttingen" },
 };
 
 const breadcrumbSchema = {

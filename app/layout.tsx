@@ -8,8 +8,8 @@ export const metadata: Metadata = {
     process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
   ),
   title: {
-    default: "GöReinigungsService",
-    template: "%s | GöReinigungsService",
+    default: "ReinigungsService-Göttingen",
+    template: "%s | ReinigungsService-Göttingen",
   },
   description:
     "Professionelle Reinigungsleistungen für private und gewerbliche Kunden in Göttingen mit verlässlicher Ausführung.",
@@ -21,31 +21,31 @@ export const metadata: Metadata = {
     "grundreinigung göttingen",
   ],
   category: "Reinigungsdienstleistungen",
-  authors: [{ name: "GöReinigungsService" }],
+  authors: [{ name: "ReinigungsService-Göttingen" }],
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "GöReinigungsService",
+    title: "ReinigungsService-Göttingen",
     description:
       "Professionelle Reinigungsleistungen für private und gewerbliche Kunden in Göttingen mit verlässlicher Ausführung.",
     locale: "de_DE",
     type: "website",
     images: [
       {
-        url: "/goereinigungsservice-hero-main.svg",
-        width: 640,
-        height: 420,
-        alt: "GöReinigungsService team at work",
+        url: "/hero-main.png",
+        width: 1200,
+        height: 800,
+        alt: "ReinigungsService-Göttingen bei der professionellen Reinigung",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "GöReinigungsService",
+    title: "ReinigungsService-Göttingen",
     description:
       "Professionelle Reinigungsleistungen in Göttingen.",
-    images: ["/goereinigungsservice-hero-main.svg"],
+    images: ["/hero-main.png"],
   },
 };
 
@@ -65,8 +65,8 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              name: "GöReinigungsService",
-              image: "/goereinigungsservice-hero-main.svg",
+              name: "ReinigungsService-Göttingen",
+              image: "/hero-main.png",
               telephone: "+49 30 1234567",
               email: "hello@goereinigungsservice.de",
               address: {

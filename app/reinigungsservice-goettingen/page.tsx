@@ -10,7 +10,7 @@ import { BrandedImage } from "../../components/molecules/BrandedImage";
 export const metadata: Metadata = {
   title: "Reinigungsservice Göttingen",
   description:
-    "GöReinigungsService ist Ihr Partner für Reinigungsservice in Göttingen: Gebäudereinigung, Büroreinigung, Fensterreinigung und Grundreinigung.",
+    "ReinigungsService-Göttingen ist Ihr Partner für Reinigungsservice in Göttingen: Gebäudereinigung, Büroreinigung, Fensterreinigung und Grundreinigung.",
   keywords: [
     "reinigungsservice göttingen",
     "reinigungsfirma göttingen",
@@ -58,7 +58,7 @@ const serviceSchema = {
   "@type": "Service",
   serviceType: "Reinigungsservice",
   areaServed: "Göttingen",
-  provider: { "@type": "LocalBusiness", name: "GöReinigungsService" },
+  provider: { "@type": "LocalBusiness", name: "ReinigungsService-Göttingen" },
 };
 
 const breadcrumbSchema = {
@@ -102,7 +102,7 @@ export default function GoettingenLandingPage() {
               Ihr professioneller Reinigungsservice in Göttingen
             </Typography>
             <Typography variant="bodyMuted" className="mb-8">
-              GöReinigungsService bietet zuverlässige Reinigung für Wohn-
+              ReinigungsService-Göttingen bietet zuverlässige Reinigung für Wohn-
               und Gewerbeflächen in Göttingen. Wir arbeiten mit klaren
               Checklisten, festen Standards und messbarer Qualität.
             </Typography>
@@ -116,7 +116,7 @@ export default function GoettingenLandingPage() {
           <div className="overflow-hidden rounded-2xl border border-[#CFF5D2] bg-[#F7F9F8] p-4">
             <BrandedImage
               src={PHOTOS.hero}
-              alt="GöReinigungsService in Göttingen bei der professionellen Reinigung"
+              alt="ReinigungsService-Göttingen in Göttingen bei der professionellen Reinigung"
               width={900}
               height={620}
               priority

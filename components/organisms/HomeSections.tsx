@@ -127,7 +127,7 @@ export function HeroSection() {
           transition={{ duration: 0.45 }}
         >
           <Typography as="p" variant="eyebrow" className="mb-4">
-            Reinigungsservice in Göttingen
+            ReinigungsService-Göttingen
           </Typography>
           <Typography as="h1" variant="display" className="mb-5 max-w-2xl">
             Sauberkeit auf Höchstem Niveau für Zuhause und Büro

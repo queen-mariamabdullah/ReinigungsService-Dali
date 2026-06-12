@@ -8,7 +8,7 @@ import {
 export const metadata: Metadata = {
   title: "Kontakt",
   description:
-    "Kontaktieren Sie GöReinigungsService für ein Angebot – per Formular, E-Mail, Telefon oder direkt in Göttingen.",
+    "Kontaktieren Sie ReinigungsService-Göttingen für ein Angebot – per Formular, E-Mail, Telefon oder direkt in Göttingen.",
   keywords: ["kontakt reinigungsservice göttingen", "angebot reinigungsfirma göttingen"],
 };
 

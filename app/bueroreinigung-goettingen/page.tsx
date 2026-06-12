@@ -7,7 +7,7 @@ import { Typography } from "../../components/atoms/Typography";
 export const metadata: Metadata = {
   title: "Büroreinigung Göttingen",
   description:
-    "Professionelle Büroreinigung in Göttingen. GöReinigungsService sorgt für hygienische, gepflegte und kundenfreundliche Arbeitsumgebungen.",
+    "Professionelle Büroreinigung in Göttingen. ReinigungsService-Göttingen sorgt für hygienische, gepflegte und kundenfreundliche Arbeitsumgebungen.",
   keywords: ["büroreinigung göttingen", "büro reinigung göttingen"],
   alternates: {
     canonical: "/bueroreinigung-goettingen",
@@ -19,7 +19,7 @@ const serviceSchema = {
   "@type": "Service",
   serviceType: "Büroreinigung",
   areaServed: "Göttingen",
-  provider: { "@type": "LocalBusiness", name: "GöReinigungsService" },
+  provider: { "@type": "LocalBusiness", name: "ReinigungsService-Göttingen" },
 };
 
 const breadcrumbSchema = {

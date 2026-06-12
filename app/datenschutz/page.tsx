@@ -5,7 +5,7 @@ import { Typography } from "../../components/atoms/Typography";
 export const metadata: Metadata = {
   title: "Datenschutz",
   description:
-    "Datenschutzerklärung von GöReinigungsService gemäß DSGVO mit Informationen zur Verarbeitung personenbezogener Daten.",
+    "Datenschutzerklärung von ReinigungsService-Göttingen gemäß DSGVO mit Informationen zur Verarbeitung personenbezogener Daten.",
 };
 
 export default function DatenschutzPage() {
@@ -26,7 +26,7 @@ export default function DatenschutzPage() {
                 1. Verantwortlicher
               </Typography>
               <Typography variant="bodyMuted">
-                GöReinigungsService
+                ReinigungsService-Göttingen
                 <br />
                 Theodor-Heuss-Str. 11, 37075 Göttingen
                 <br />

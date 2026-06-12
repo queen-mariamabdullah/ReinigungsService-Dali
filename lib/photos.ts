@@ -1,13 +1,13 @@
 /**
- * Local marketing images in /public use ASCII filenames (goereinigungsservice-*)
- * for reliable hosting. Unsplash URLs remain for blog/people.
+ * Hero/contact use PNG photos in /public. Service cards use SVG illustrations.
+ * Unsplash URLs remain for blog/people.
  */
 export const PHOTOS = {
-  hero: "/goereinigungsservice-hero-main.svg",
+  hero: "/hero-main.png",
   aboutTeam:
     "https://images.unsplash.com/photo-1600880292203-757bb62b4b99?auto=format&fit=crop&w=1400&q=80",
-  contact: "/goereinigungsservice-contact-main.svg",
-  contactIntro: "/goereinigungsservice-contact-main.svg",
+  contact: "/contact-main.png",
+  contactIntro: "/contact-main.png",
   services: {
     home: "/goereinigungsservice-service-home-cleaning.svg",
     office: "/goereinigungsservice-service-office-cleaning.svg",

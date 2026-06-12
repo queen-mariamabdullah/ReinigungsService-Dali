@@ -19,7 +19,7 @@ const serviceSchema = {
   "@type": "Service",
   serviceType: "Grundreinigung",
   areaServed: "Göttingen",
-  provider: { "@type": "LocalBusiness", name: "GöReinigungsService" },
+  provider: { "@type": "LocalBusiness", name: "ReinigungsService-Göttingen" },
 };
 
 const breadcrumbSchema = {

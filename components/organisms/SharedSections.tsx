@@ -68,8 +68,8 @@ export function AboutContentSection() {
             Wer wir sind
           </Typography>
           <Typography variant="bodyMuted">
-            Wir sind ein Reinigungsteam aus Göttingen und bieten zuverlässige
-            Servicequalität für private und gewerbliche Kunden.
+            ReinigungsService-Göttingen ist Ihr Reinigungsteam aus Göttingen und
+            bietet zuverlässige Servicequalität für private und gewerbliche Kunden.
           </Typography>
         </article>
         <article className="rounded-2xl border border-[#E3EFE5] bg-[#F7F9F8] p-6 md:p-8">

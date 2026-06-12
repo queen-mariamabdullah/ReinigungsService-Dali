@@ -9,8 +9,8 @@ import {
 export const metadata: Metadata = {
   title: "Über uns",
   description:
-    "Lernen Sie GöReinigungsService kennen: unsere Mission, Werte und professionellen Reinigungsstandards.",
-  keywords: ["reinigungsfirma göttingen", "über uns göreinigungsservice"],
+    "Lernen Sie ReinigungsService-Göttingen kennen: unsere Mission, Werte und professionellen Reinigungsstandards.",
+  keywords: ["reinigungsfirma göttingen", "über uns reinigungsservice göttingen"],
 };
 
 export default function AboutPage() {
