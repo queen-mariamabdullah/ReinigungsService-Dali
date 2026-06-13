@@ -1,17 +1,17 @@
 /**
- * Hero/contact use PNG photos in /public. Service cards use SVG illustrations.
+ * Local images in /public use the reinigungsservice-goettingen- filename prefix.
  * Unsplash URLs remain for blog/people.
  */
 export const PHOTOS = {
-  hero: "/hero-main.png",
+  hero: "/reinigungsservice-goettingen-hero-main.png",
   aboutTeam:
     "https://images.unsplash.com/photo-1600880292203-757bb62b4b99?auto=format&fit=crop&w=1400&q=80",
-  contact: "/contact-main.png",
-  contactIntro: "/contact-main.png",
+  contact: "/reinigungsservice-goettingen-contact-main.png",
+  contactIntro: "/reinigungsservice-goettingen-contact-main.png",
   services: {
-    home: "/goereinigungsservice-service-home-cleaning.svg",
-    office: "/goereinigungsservice-service-office-cleaning.svg",
-    deep: "/goereinigungsservice-service-deep-cleaning.svg",
+    home: "/reinigungsservice-goettingen-service-home-cleaning.svg",
+    office: "/reinigungsservice-goettingen-service-office-cleaning.svg",
+    deep: "/reinigungsservice-goettingen-service-deep-cleaning.svg",
   },
   blog: {
     freshHome:
