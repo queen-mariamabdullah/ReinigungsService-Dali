@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
+import { PHOTOS } from "@/lib/photos";
 import { SiteShell } from "../components/layout/SiteShell";
 import "./globals.css";
 
@@ -33,9 +34,9 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/reinigungsservice-goettingen-hero-main.png",
-        width: 1200,
-        height: 800,
+        url: PHOTOS.hero,
+        width: 1400,
+        height: 933,
         alt: "ReinigungsService-Göttingen bei der professionellen Reinigung",
       },
     ],
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
     title: "ReinigungsService-Göttingen",
     description:
       "Professionelle Reinigungsleistungen in Göttingen.",
-    images: ["/reinigungsservice-goettingen-hero-main.png"],
+    images: [PHOTOS.hero],
   },
 };
 
@@ -66,7 +67,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "ReinigungsService-Göttingen",
-              image: "/reinigungsservice-goettingen-hero-main.png",
+              image: PHOTOS.hero,
               telephone: "+49 30 1234567",
               email: "hello@goereinigungsservice.de",
               address: {
