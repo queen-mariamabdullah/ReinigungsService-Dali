@@ -1,8 +1,15 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import Script from "next/script";
 import { PHOTOS } from "@/lib/photos";
 import { SiteShell } from "../components/layout/SiteShell";
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL(
@@ -13,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | ReinigungsService-Göttingen",
   },
   description:
-    "Professionelle Reinigungsleistungen für private und gewerbliche Kunden in Göttingen mit verlässlicher Ausführung.",
+    "Professionelle Reinigungsleistungen als selbstständiges Einzelunternehmen in Göttingen mit verlässlicher Ausführung.",
   keywords: [
     "reinigungsservice göttingen",
     "gebäudereinigung göttingen",
@@ -29,7 +36,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ReinigungsService-Göttingen",
     description:
-      "Professionelle Reinigungsleistungen für private und gewerbliche Kunden in Göttingen mit verlässlicher Ausführung.",
+      "Professionelle Reinigungsleistungen als selbstständiges Einzelunternehmen in Göttingen mit verlässlicher Ausführung.",
     locale: "de_DE",
     type: "website",
     images: [
@@ -56,8 +63,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de">
-      <body className="antialiased">
+    <html lang="de" className={inter.variable}>
+      <body className="antialiased font-sans">
         <Script
           id="local-business-schema"
           type="application/ld+json"
@@ -67,6 +74,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
               name: "ReinigungsService-Göttingen",
+              description:
+                "Selbstständiger Reinigungsservice in Göttingen (Einzelunternehmen).",
               image: PHOTOS.hero,
               telephone: "+49 30 1234567",
               email: "hello@goereinigungsservice.de",

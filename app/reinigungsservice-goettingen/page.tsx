@@ -10,7 +10,7 @@ import { BrandedImage } from "../../components/molecules/BrandedImage";
 export const metadata: Metadata = {
   title: "Reinigungsservice Göttingen",
   description:
-    "ReinigungsService-Göttingen ist Ihr Partner für Reinigungsservice in Göttingen: Gebäudereinigung, Büroreinigung, Fensterreinigung und Grundreinigung.",
+    "Selbstständiger Reinigungsservice in Göttingen: Gebäudereinigung, Büroreinigung, Fensterreinigung und Grundreinigung mit persönlicher Betreuung.",
   keywords: [
     "reinigungsservice göttingen",
     "reinigungsfirma göttingen",
@@ -31,7 +31,7 @@ const faqSchema = {
       name: "Welche Leistungen bietet Ihr Reinigungsservice in Göttingen?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Wir bieten Gebäudereinigung, Büroreinigung, Fensterreinigung und Grundreinigung für private und gewerbliche Kunden in Göttingen.",
+        text: "Ich biete Gebäudereinigung, Büroreinigung, Fensterreinigung und Grundreinigung für private und gewerbliche Kunden in Göttingen.",
       },
     },
     {
@@ -47,7 +47,7 @@ const faqSchema = {
       name: "Sind regelmäßige Reinigungspläne möglich?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Ja, wir erstellen individuelle Reinigungspläne für wöchentliche, zweiwöchentliche oder flexible Einsätze.",
+        text: "Ja, ich erstelle individuelle Reinigungspläne für wöchentliche, zweiwöchentliche oder flexible Einsätze.",
       },
     },
   ],
@@ -102,8 +102,9 @@ export default function GoettingenLandingPage() {
               Ihr professioneller Reinigungsservice in Göttingen
             </Typography>
             <Typography variant="bodyMuted" className="mb-8">
-              ReinigungsService-Göttingen bietet zuverlässige Reinigung für Wohn-
-              und Gewerbeflächen in Göttingen. Wir arbeiten mit klaren
+              ReinigungsService-Göttingen bietet als selbstständiges
+              Einzelunternehmen zuverlässige Reinigung für Wohn- und
+              Gewerbeflächen in Göttingen. Persönliche Betreuung, klare
               Checklisten, festen Standards und messbarer Qualität.
             </Typography>
             <div className="flex flex-wrap gap-4">
@@ -113,10 +114,10 @@ export default function GoettingenLandingPage() {
               </Button>
             </div>
           </div>
-          <div className="overflow-hidden rounded-2xl border border-[#CFF5D2] bg-[#F7F9F8] p-4">
+          <div className="pro-image-frame p-3 md:p-4">
             <BrandedImage
               src={PHOTOS.hero}
-              alt="ReinigungsService-Göttingen in Göttingen bei der professionellen Reinigung"
+              alt="Professionelle Reinigung in Göttingen"
               width={900}
               height={620}
               priority
@@ -192,11 +193,11 @@ export default function GoettingenLandingPage() {
             </article>
             <article className="rounded-xl border border-[#DCEFE0] p-5">
               <Typography as="h3" variant="h3" className="mb-2">
-                Arbeiten Sie mit festen Teams?
+                Haben Sie einen festen Ansprechpartner?
               </Typography>
               <Typography variant="bodyMuted">
-                Ja, wo möglich planen wir feste Teams ein, damit Qualität und
-                Kommunikation langfristig stabil bleiben.
+                Ja. Als selbstständiger Reinigungsservice betreue ich Ihr Objekt
+                persönlich – Sie haben immer denselben direkten Ansprechpartner.
               </Typography>
             </article>
           </div>

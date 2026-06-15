@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --font-display: "Segoe UI", "Inter", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
-  --font-body: "Inter", "Segoe UI", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  --font-display: var(--font-inter), "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-body: var(--font-inter), "Segoe UI", "Helvetica Neue", Arial, sans-serif;
 }
 
 html {
@@ -16,14 +16,28 @@ body {
   color: #1a1a1a;
   font-family: var(--font-body);
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a,
 button {
-  transition: all 200ms ease;
+  transition: color 200ms ease, background-color 200ms ease, border-color 200ms ease,
+    box-shadow 200ms ease, transform 200ms ease;
 }
 
 *:focus-visible {
   outline: 2px solid #1f5f4a;
   outline-offset: 2px;
+}
+
+::selection {
+  background-color: #cff5d2;
+  color: #1a1a1a;
+}
+
+@layer components {
+  .pro-image-frame {
+    @apply overflow-hidden rounded-2xl border border-brand-mint/80 bg-white shadow-card ring-1 ring-black/[0.03];
+  }
 }

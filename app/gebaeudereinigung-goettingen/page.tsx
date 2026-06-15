@@ -59,7 +59,7 @@ export default function GebäudereinigungPage() {
             und stark frequentierte Zonen mit festen Qualitätsstandards.
           </Typography>
           <Typography variant="bodyMuted" className="mb-8">
-            Unser Team erstellt einen klaren Reinigungsplan, abgestimmt auf
+            Ich erstelle einen klaren Reinigungsplan, abgestimmt auf
             Objektgröße, Nutzung und Reinigungsintervalle.
           </Typography>
           <Button href="/contact">Gebäudereinigung anfragen</Button>

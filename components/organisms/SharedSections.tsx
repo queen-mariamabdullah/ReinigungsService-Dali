@@ -43,7 +43,7 @@ export function PageIntroSection({
           <Typography variant="bodyMuted">{description}</Typography>
         </div>
         {hasImage && imageSrc ? (
-          <div className="overflow-hidden rounded-2xl border border-[#CFF5D2] bg-white shadow-sm">
+          <div className="pro-image-frame shadow-sm">
             <BrandedImage
               src={imageSrc}
               alt={imageAlt ?? ""}
@@ -65,11 +65,12 @@ export function AboutContentSection() {
       <div className="grid gap-8 md:grid-cols-3">
         <article className="rounded-2xl border border-[#E3EFE5] bg-[#F7F9F8] p-6 md:p-8">
           <Typography as="h3" variant="h3" className="mb-4">
-            Wer wir sind
+            Wer ich bin
           </Typography>
           <Typography variant="bodyMuted">
-            ReinigungsService-Göttingen ist Ihr Reinigungsteam aus Göttingen und
-            bietet zuverlässige Servicequalität für private und gewerbliche Kunden.
+            ReinigungsService-Göttingen ist ein selbstständiges Einzelunternehmen
+            in Göttingen mit persönlicher Betreuung für private und gewerbliche
+            Kunden.
           </Typography>
         </article>
         <article className="rounded-2xl border border-[#E3EFE5] bg-[#F7F9F8] p-6 md:p-8">
@@ -87,7 +88,7 @@ export function AboutContentSection() {
           </Typography>
           <Typography variant="bodyMuted">
             Professionalität, Vertrauen und Liebe zum Detail prägen jeden
-            Einsatz unseres Teams.
+            Einsatz – mit direktem Ansprechpartner ohne Umwege.
           </Typography>
         </article>
       </div>
@@ -113,8 +114,9 @@ export function ProfessionalPositioningSection() {
             Unser Anspruch
           </Typography>
           <Typography variant="bodyMuted">
-            Wir arbeiten als Premium-Partner für Kunden, die Wert auf
-            Pünktlichkeit, klare Kommunikation und messbare Reinigungsqualität legen.
+            Als selbstständiger Reinigungsservice arbeite ich persönlich für
+            Kunden, die Wert auf Pünktlichkeit, klare Kommunikation und
+            messbare Reinigungsqualität legen.
           </Typography>
         </article>
       </div>

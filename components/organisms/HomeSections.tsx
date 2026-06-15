@@ -17,7 +17,7 @@ const services = [
     title: "Wohnungsreinigung",
     imageSrc: PHOTOS.services.home,
     description:
-      "Strukturierte Reinigungspläne im wöchentlichen oder zweiwöchentlichen Rhythmus mit zuverlässigen Teams und klarer Qualitätskontrolle.",
+      "Strukturierte Reinigungspläne im wöchentlichen oder zweiwöchentlichen Rhythmus mit persönlicher Betreuung und klarer Qualitätskontrolle.",
   },
   {
     title: "Büroreinigung",
@@ -35,9 +35,9 @@ const services = [
 
 const features = [
   {
-    title: "Geprüfte Fachkräfte",
+    title: "Persönliche Fachkompetenz",
     description:
-      "Unsere geschulten Mitarbeitenden arbeiten bei jedem Einsatz nach klaren Checklisten und hohen Qualitätsstandards.",
+      "Jeder Einsatz folgt klaren Checklisten und hohen Qualitätsstandards – ausgeführt vom Inhaber selbst.",
   },
   {
     title: "Transparente Kommunikation",
@@ -47,7 +47,7 @@ const features = [
   {
     title: "Umweltbewusste Mittel",
     description:
-      "Wir setzen auf wirksame Reinigungsprodukte, die für Familien, Teams und Innenräume besser verträglich sind.",
+      "Ich setze auf wirksame Reinigungsprodukte, die für Familien, Büros und Innenräume besser verträglich sind.",
   },
 ];
 
@@ -56,15 +56,13 @@ const testimonials = [
     quote:
       "Zuverlässig, pünktlich und sehr gründlich. Die Qualität war vom ersten Tag an hervorragend.",
     author: "Anna M.",
-    role: "Privatkunden, Göttingen",
-    avatarSrc: PHOTOS.people.anna,
+    role: "Privatkundin, Göttingen",
   },
   {
     quote:
       "Unser Büro ist immer sauber und repräsentativ. Kommunikation und Ausführung sind absolut professionell.",
     author: "Markus M.",
-    role: "Betriebsleiter, Göttingen",
-    avatarSrc: PHOTOS.people.markus,
+    role: "Geschäftskunde, Göttingen",
   },
 ];
 
@@ -78,7 +76,7 @@ const blogPosts = [
   {
     title: "Hygienestandards im Büro, die Produktivität fördern",
     excerpt:
-      "Wie ein strukturierter Reinigungsplan Komfort und Teamleistung im Büro verbessert.",
+      "Wie ein strukturierter Reinigungsplan Komfort und Produktivität im Büro verbessert.",
     imageSrc: PHOTOS.blog.officeHygiene,
   },
   {
@@ -116,7 +114,7 @@ export function HeroSection() {
   }, []);
 
   return (
-    <Section className="relative overflow-hidden bg-gradient-to-br from-[#F7F9F8] via-[#EEF8F0] to-[#DDF3E2]">
+    <Section className="relative overflow-hidden bg-gradient-to-br from-brand-surface via-brand-mintLight to-brand-mint/30">
       <div className="pointer-events-none absolute -left-24 top-8 h-72 w-72 rounded-full bg-[#6EE7A8]/20 blur-3xl" />
       <div className="pointer-events-none absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-[#1F5F4A]/15 blur-3xl" />
       <div className="relative grid items-center gap-10 md:grid-cols-2 md:gap-14">
@@ -133,8 +131,8 @@ export function HeroSection() {
             Sauberkeit auf Höchstem Niveau für Zuhause und Büro
           </Typography>
           <Typography variant="bodyMuted" className="mb-8 max-w-xl">
-            Strukturierte Reinigungspläne, zuverlässige Teams und konstant
-            hohe Qualität für private und gewerbliche Kunden in Göttingen.
+            Selbstständiger Reinigungsservice mit persönlicher Betreuung und
+            konstanter Qualität für private und gewerbliche Kunden in Göttingen.
           </Typography>
           <div className="flex flex-wrap gap-4">
             <Button href="/contact" className="shadow-sm">
@@ -167,11 +165,11 @@ export function HeroSection() {
         </motion.div>
         <div
           ref={cardRef}
-          className="rounded-2xl border border-[#A9E5B7] bg-gradient-to-br from-[#E6FBEA] via-[#D9F7DF] to-[#C7F1D0] p-5 shadow-md md:p-8"
+          className="pro-image-frame p-4 md:p-5"
         >
           <BrandedImage
             src={PHOTOS.hero}
-            alt="Professionelles Reinigungsteam in einer gepflegten, hellen Umgebung"
+            alt="Professionelle Reinigung in Göttingen"
             width={640}
             height={420}
             priority
@@ -182,8 +180,8 @@ export function HeroSection() {
             Sorgfalt bei jedem Einsatz
           </Typography>
           <Typography variant="bodyMuted">
-            Klare Checklisten, geschulte Teams und nachvollziehbare Ergebnisse
-            bei jedem Termin.
+            Klare Checklisten, persönliche Ausführung und nachvollziehbare
+            Ergebnisse bei jedem Termin.
           </Typography>
         </div>
       </div>
@@ -260,7 +258,7 @@ export function TestimonialsSection() {
           Kundenstimmen
         </Typography>
         <Typography as="h2" variant="h2">
-          Vertrauen von Privat- und Geschäftskunden
+          Vertrauen von Privat- und Gewerbekunden
         </Typography>
       </div>
       <div className="grid gap-6 md:grid-cols-2">
@@ -270,7 +268,6 @@ export function TestimonialsSection() {
             quote={testimonial.quote}
             author={testimonial.author}
             role={testimonial.role}
-            avatarSrc={testimonial.avatarSrc}
           />
         ))}
       </div>
@@ -293,7 +290,7 @@ export function BlogPreviewSection() {
         {blogPosts.map((post) => (
           <article
             key={post.title}
-            className="overflow-hidden rounded-2xl border border-[#CFF5D2] bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md"
+            className="overflow-hidden rounded-2xl border border-[#CFF5D2] bg-white shadow-card transition duration-300 hover:-translate-y-0.5 hover:shadow-cardHover"
           >
             <div className="overflow-hidden border-b border-[#CFF5D2]">
               <BrandedImage

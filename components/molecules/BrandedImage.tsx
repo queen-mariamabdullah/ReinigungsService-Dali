@@ -8,6 +8,7 @@ type BrandedImageProps = {
   className?: string;
   sizes?: string;
   priority?: boolean;
+  showBadge?: boolean;
   brandName?: string;
 };
 
@@ -19,6 +20,7 @@ export function BrandedImage({
   className = "",
   sizes,
   priority = false,
+  showBadge = false,
   brandName = "ReinigungsService-Göttingen",
 }: BrandedImageProps) {
   const isSvg = src.endsWith(".svg");
@@ -27,7 +29,7 @@ export function BrandedImage({
     .replace(/\bh-\d+\b/g, "h-auto min-h-[11rem]");
 
   return (
-    <div className="relative">
+    <div className="relative overflow-hidden bg-brand-surface">
       {isSvg ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
@@ -50,9 +52,11 @@ export function BrandedImage({
           priority={priority}
         />
       )}
-      <div className="pointer-events-none absolute right-3 top-3 rounded-lg bg-[#1A1A1A]/70 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-white backdrop-blur-sm md:text-xs">
-        {brandName}
-      </div>
+      {showBadge ? (
+        <div className="pointer-events-none absolute right-3 top-3 rounded-lg bg-[#1A1A1A]/75 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.08em] text-white backdrop-blur-sm md:text-xs">
+          {brandName}
+        </div>
+      ) : null}
     </div>
   );
 }

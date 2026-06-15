@@ -5,7 +5,7 @@ import { Typography } from "../../components/atoms/Typography";
 export const metadata: Metadata = {
   title: "Impressum",
   description:
-    "Impressum von ReinigungsService-Göttingen gemäß den gesetzlichen Pflichtangaben nach deutschem Recht.",
+    "Impressum von ReinigungsService-Göttingen als Einzelunternehmen gemäß den gesetzlichen Pflichtangaben nach deutschem Recht.",
 };
 
 export default function ImpressumPage() {
@@ -28,6 +28,8 @@ export default function ImpressumPage() {
               <Typography variant="bodyMuted">
                 ReinigungsService-Göttingen
                 <br />
+                Einzelunternehmen (selbstständige Reinigungsdienstleistung)
+                <br />
                 Theodor-Heuss-Str. 11
                 <br />
                 37075 Göttingen
@@ -49,9 +51,11 @@ export default function ImpressumPage() {
 
             <section>
               <Typography as="h2" variant="h2" className="mb-3">
-                Vertreten durch
+                Inhaber
               </Typography>
               <Typography variant="bodyMuted">
+                Selbstständige Reinigungskraft
+                <br />
                 ReinigungsService-Göttingen
               </Typography>
             </section>

@@ -28,6 +28,8 @@ export default function DatenschutzPage() {
               <Typography variant="bodyMuted">
                 ReinigungsService-Göttingen
                 <br />
+                Einzelunternehmen (selbstständige Reinigungsdienstleistung)
+                <br />
                 Theodor-Heuss-Str. 11, 37075 Göttingen
                 <br />
                 E-Mail: hello@goereinigungsservice.de

@@ -15,9 +15,9 @@ export function ServiceCard({
   imageAlt,
 }: ServiceCardProps) {
   return (
-    <article className="rounded-2xl border border-[#DCEFE0] bg-white p-6 shadow-sm transition duration-300 hover:-translate-y-1 hover:shadow-md md:p-8">
+    <article className="rounded-2xl border border-[#DCEFE0] bg-white p-6 shadow-card transition duration-300 hover:-translate-y-0.5 hover:shadow-cardHover md:p-8">
       {imageSrc ? (
-        <div className="mb-5 overflow-hidden rounded-xl border border-[#CFF5D2]">
+        <div className="pro-image-frame mb-5">
           <BrandedImage
             src={imageSrc}
             alt={imageAlt ?? `${title} service photo`}
