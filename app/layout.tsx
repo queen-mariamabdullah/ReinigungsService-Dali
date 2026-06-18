@@ -1,13 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Libre_Baskerville, Source_Sans_3 } from "next/font/google";
 import Script from "next/script";
 import { PHOTOS } from "@/lib/photos";
 import { SiteShell } from "../components/layout/SiteShell";
 import "./globals.css";
 
-const inter = Inter({
+const libreBaskerville = Libre_Baskerville({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ["400", "700"],
+  variable: "--font-display",
+  display: "swap",
+});
+
+const sourceSans = Source_Sans_3({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-body",
   display: "swap",
 });
 
@@ -63,8 +71,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="de" className={inter.variable}>
-      <body className="antialiased font-sans">
+    <html lang="de" className={`${libreBaskerville.variable} ${sourceSans.variable}`}>
+      <body className="antialiased font-body">
         <Script
           id="local-business-schema"
           type="application/ld+json"

@@ -3,15 +3,19 @@ import {
   FinalCtaSection,
   HeroSection,
   LocalCoverageSection,
+  ProcessSection,
   ServicesSection,
   TestimonialsSection,
+  TrustBarSection,
   WhyChooseUsSection,
 } from "../organisms/HomeSections";
 
 export function HomePage() {
   return (
-    <main className="min-h-screen bg-[#F7F9F8] text-[#1A1A1A]">
+    <main className="min-h-screen bg-brand-surface text-[#1A1A1A]">
       <HeroSection />
+      <TrustBarSection />
+      <ProcessSection />
       <ServicesSection />
       <WhyChooseUsSection />
       <TestimonialsSection />

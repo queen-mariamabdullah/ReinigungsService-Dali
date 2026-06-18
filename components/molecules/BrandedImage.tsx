@@ -1,4 +1,8 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
+import { PHOTO_FALLBACKS } from "@/lib/photos";
 
 type BrandedImageProps = {
   src: string;
@@ -10,6 +14,7 @@ type BrandedImageProps = {
   priority?: boolean;
   showBadge?: boolean;
   brandName?: string;
+  fallbackSrc?: string;
 };
 
 export function BrandedImage({
@@ -22,34 +27,45 @@ export function BrandedImage({
   priority = false,
   showBadge = false,
   brandName = "ReinigungsService-Göttingen",
+  fallbackSrc,
 }: BrandedImageProps) {
-  const isSvg = src.endsWith(".svg");
+  const resolvedFallback = fallbackSrc ?? PHOTO_FALLBACKS[src];
+  const [activeSrc, setActiveSrc] = useState(src);
+  const isSvg = activeSrc.endsWith(".svg");
   const svgClassName = className
     .replace(/\bobject-cover\b/g, "object-contain")
     .replace(/\bh-\d+\b/g, "h-auto min-h-[11rem]");
+
+  const handleError = () => {
+    if (resolvedFallback && activeSrc !== resolvedFallback) {
+      setActiveSrc(resolvedFallback);
+    }
+  };
 
   return (
     <div className="relative overflow-hidden bg-brand-surface">
       {isSvg ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
-          src={src}
+          src={activeSrc}
           alt={alt}
           width={width}
           height={height}
           className={`block w-full ${svgClassName}`}
           loading={priority ? "eager" : "lazy"}
           decoding="async"
+          onError={handleError}
         />
       ) : (
         <Image
-          src={src}
+          src={activeSrc}
           alt={alt}
           width={width}
           height={height}
           className={className}
           sizes={sizes}
           priority={priority}
+          onError={handleError}
         />
       )}
       {showBadge ? (

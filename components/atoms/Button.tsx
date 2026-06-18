@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ButtonHTMLAttributes, ReactNode } from "react";
+import { ButtonHTMLAttributes, MouseEventHandler, ReactNode } from "react";
 
 type ButtonVariant = "primary" | "secondary";
 
@@ -29,8 +29,9 @@ export function Button({
     `inline-flex items-center justify-center rounded-xl px-6 py-3 text-base font-semibold transition duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-60 ${variantClasses[variant]} ${className}`.trim();
 
   if (href) {
+    const linkOnClick = props.onClick as MouseEventHandler<HTMLAnchorElement> | undefined;
     return (
-      <Link href={href} className={classes}>
+      <Link href={href} className={classes} onClick={linkOnClick}>
         {children}
       </Link>
     );

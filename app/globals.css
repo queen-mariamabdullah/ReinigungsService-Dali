@@ -3,41 +3,86 @@
 @tailwind utilities;
 
 :root {
-  --font-display: var(--font-inter), "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-  --font-body: var(--font-inter), "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --color-primary: #1f5f4a;
+  --color-primary-dark: #1a523f;
+  --color-secondary: #cff5d2;
+  --color-accent: #6ee7a8;
+  --color-surface: #f7f9f8;
+  --color-text: #1a1a1a;
+  --color-text-muted: #4b5563;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
-  background-color: #f7f9f8;
-  color: #1a1a1a;
-  font-family: var(--font-body);
+  background-color: var(--color-surface);
+  color: var(--color-text);
+  font-family: var(--font-body), "Segoe UI", sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+body::before {
+  content: "";
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  opacity: 0.025;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+}
+
 a,
 button {
-  transition: color 200ms ease, background-color 200ms ease, border-color 200ms ease,
-    box-shadow 200ms ease, transform 200ms ease;
+  transition:
+    color 200ms ease,
+    background-color 200ms ease,
+    border-color 200ms ease,
+    box-shadow 200ms ease,
+    transform 200ms ease;
 }
 
 *:focus-visible {
-  outline: 2px solid #1f5f4a;
+  outline: 2px solid var(--color-primary);
   outline-offset: 2px;
 }
 
 ::selection {
-  background-color: #cff5d2;
-  color: #1a1a1a;
+  background-color: var(--color-secondary);
+  color: var(--color-text);
 }
 
 @layer components {
   .pro-image-frame {
     @apply overflow-hidden rounded-2xl border border-brand-mint/80 bg-white shadow-card ring-1 ring-black/[0.03];
+  }
+
+  .section-eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full border border-brand-mint bg-white px-4 py-1.5 font-body text-xs font-semibold uppercase tracking-[0.06em] text-brand-forest shadow-sm md:text-sm;
+  }
+
+  .glass-panel {
+    @apply rounded-2xl border border-brand-mint/80 bg-white shadow-card;
+  }
+
+  .nav-link {
+    @apply cursor-pointer rounded-lg px-4 py-2 font-body text-sm font-semibold text-[#374151] transition hover:bg-brand-mintLight hover:text-brand-forest;
+  }
+
+  .nav-link-active {
+    @apply bg-brand-mintLight text-brand-forest;
+  }
+
+  .section-band {
+    @apply border-y border-brand-mint/60 bg-white;
   }
 }

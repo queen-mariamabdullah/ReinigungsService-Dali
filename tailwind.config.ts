@@ -17,7 +17,23 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "Segoe UI", "Helvetica Neue", "Arial", "sans-serif"],
+        sans: ["var(--font-body)", "Segoe UI", "Helvetica Neue", "Arial", "sans-serif"],
+        display: ["var(--font-display)", "Georgia", "serif"],
+        body: ["var(--font-body)", "Segoe UI", "Helvetica Neue", "Arial", "sans-serif"],
+      },
+      animation: {
+        "fade-up": "fadeUp 0.6s ease-out forwards",
+        "pulse-soft": "pulseSoft 3s ease-in-out infinite",
+      },
+      keyframes: {
+        fadeUp: {
+          "0%": { opacity: "0", transform: "translateY(16px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        pulseSoft: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.85" },
+        },
       },
       boxShadow: {
         card: "0 4px 24px -4px rgba(31, 95, 74, 0.08)",
