@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Libre_Baskerville, Source_Sans_3 } from "next/font/google";
 import Script from "next/script";
+import { BUSINESS_CONTACT } from "@/lib/business";
 import { PHOTOS } from "@/lib/photos";
 import { SiteShell } from "../components/layout/SiteShell";
 import "./globals.css";
@@ -85,8 +86,8 @@ export default function RootLayout({
               description:
                 "Selbstständiger Reinigungsservice in Göttingen (Einzelunternehmen).",
               image: PHOTOS.hero,
-              telephone: "+49 30 1234567",
-              email: "hello@goereinigungsservice.de",
+              telephone: BUSINESS_CONTACT.phoneDisplay,
+              email: BUSINESS_CONTACT.email,
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Theodor-Heuss-Str. 11",

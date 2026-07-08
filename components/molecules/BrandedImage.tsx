@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { PHOTO_FALLBACKS } from "@/lib/photos";
+import { isRemotePhoto, PHOTO_FALLBACKS } from "@/lib/photos";
 
 type BrandedImageProps = {
   src: string;
@@ -65,6 +65,7 @@ export function BrandedImage({
           className={className}
           sizes={sizes}
           priority={priority}
+          unoptimized={isRemotePhoto(activeSrc)}
           onError={handleError}
         />
       )}

@@ -5,6 +5,7 @@ import {
   LocalCoverageSection,
   ProcessSection,
   ServicesSection,
+  SocialProofSection,
   TestimonialsSection,
   TrustBarSection,
   WhyChooseUsSection,
@@ -15,10 +16,11 @@ export function HomePage() {
     <main className="min-h-screen bg-brand-surface text-[#1A1A1A]">
       <HeroSection />
       <TrustBarSection />
-      <ProcessSection />
-      <ServicesSection />
-      <WhyChooseUsSection />
+      <SocialProofSection />
       <TestimonialsSection />
+      <ServicesSection />
+      <ProcessSection />
+      <WhyChooseUsSection />
       <BlogPreviewSection />
       <LocalCoverageSection />
       <FinalCtaSection />

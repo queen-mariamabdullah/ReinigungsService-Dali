@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BUSINESS_CONTACT } from "@/lib/business";
 import { Section } from "../../components/atoms/Section";
 import { Typography } from "../../components/atoms/Typography";
 
@@ -43,9 +44,9 @@ export default function ImpressumPage() {
                 Kontakt
               </Typography>
               <Typography variant="bodyMuted">
-                Telefon: +49 30 1234567
+                Telefon: {BUSINESS_CONTACT.phoneDisplay}
                 <br />
-                E-Mail: hello@goereinigungsservice.de
+                E-Mail: {BUSINESS_CONTACT.email}
               </Typography>
             </section>
 

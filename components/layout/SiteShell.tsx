@@ -4,9 +4,11 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { ReactNode, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { BUSINESS_CONTACT } from "@/lib/business";
 import { PHOTO_LICENSE } from "@/lib/photos";
 import { Button } from "../atoms/Button";
 import { Icon } from "../atoms/Icon";
+import { SmoothScrollProvider } from "../providers/SmoothScrollProvider";
 
 type SiteShellProps = {
   children: ReactNode;
@@ -60,7 +62,8 @@ export function SiteShell({ children }: SiteShellProps) {
   }, [pathname]);
 
   return (
-    <>
+    <SmoothScrollProvider>
+      <>
       <header
         className={`sticky top-0 z-50 transition-all duration-300 ${
           scrolled
@@ -100,11 +103,11 @@ export function SiteShell({ children }: SiteShellProps) {
 
           <div className="flex shrink-0 items-center gap-2 md:gap-3">
             <Link
-              href="tel:+49301234567"
+              href={BUSINESS_CONTACT.phoneHref}
               className="hidden cursor-pointer items-center gap-2 rounded-xl px-3 py-2 font-body text-sm font-semibold text-brand-forest transition hover:bg-brand-mintLight xl:inline-flex"
             >
               <Icon name="phone" className="h-4 w-4" strokeWidth={2} />
-              +49 30 1234567
+              {BUSINESS_CONTACT.phoneDisplay}
             </Link>
             <Button
               href="/contact"
@@ -203,7 +206,7 @@ export function SiteShell({ children }: SiteShellProps) {
               </div>
               <div className="space-y-3 border-t border-brand-mint/60 bg-brand-surface p-4">
                 <Link
-                  href="tel:+49301234567"
+                  href={BUSINESS_CONTACT.phoneHref}
                   className="flex cursor-pointer items-center justify-center gap-2 rounded-xl border border-brand-mint bg-white px-4 py-3 font-body text-sm font-semibold text-brand-forest"
                   onClick={() => setMenuOpen(false)}
                 >
@@ -239,18 +242,18 @@ export function SiteShell({ children }: SiteShellProps) {
               </p>
               <div className="mt-6 space-y-3">
                 <a
-                  href="mailto:hello@goereinigungsservice.de"
+                  href={BUSINESS_CONTACT.emailHref}
                   className="flex cursor-pointer items-center gap-3 font-body text-sm text-white/90 transition hover:text-white"
                 >
                   <Icon name="mail" className="h-4 w-4 shrink-0 text-[#6EE7A8]" strokeWidth={2} />
-                  hello@goereinigungsservice.de
+                  {BUSINESS_CONTACT.email}
                 </a>
                 <a
-                  href="tel:+49301234567"
+                  href={BUSINESS_CONTACT.phoneHref}
                   className="flex cursor-pointer items-center gap-3 font-body text-sm text-white/90 transition hover:text-white"
                 >
                   <Icon name="phone" className="h-4 w-4 shrink-0 text-[#6EE7A8]" strokeWidth={2} />
-                  +49 30 1234567
+                  {BUSINESS_CONTACT.phoneDisplay}
                 </a>
                 <p className="flex items-start gap-3 font-body text-sm text-white/90">
                   <Icon name="map" className="mt-0.5 h-4 w-4 shrink-0 text-[#6EE7A8]" strokeWidth={2} />
@@ -347,6 +350,7 @@ export function SiteShell({ children }: SiteShellProps) {
           </div>
         </div>
       </footer>
-    </>
+      </>
+    </SmoothScrollProvider>
   );
 }

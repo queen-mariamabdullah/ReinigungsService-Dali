@@ -1,4 +1,5 @@
 import { PHOTOS } from "@/lib/photos";
+import { BUSINESS_CONTACT } from "@/lib/business";
 import { Button } from "../atoms/Button";
 import { Icon } from "../atoms/Icon";
 import { Section } from "../atoms/Section";
@@ -282,21 +283,21 @@ export function ContactSection() {
           </Typography>
           <div className="space-y-4">
             <a
-              href="mailto:hello@goereinigungsservice.de"
+              href={BUSINESS_CONTACT.emailHref}
               className="flex cursor-pointer items-start gap-3 font-body text-[#1F2937] transition hover:text-brand-forest"
             >
               <Icon name="mail" className="mt-0.5 h-5 w-5 shrink-0 text-brand-forest" strokeWidth={2} />
               <span>
-                <span className="font-semibold">E-Mail:</span> hello@goereinigungsservice.de
+                <span className="font-semibold">E-Mail:</span> {BUSINESS_CONTACT.email}
               </span>
             </a>
             <a
-              href="tel:+49301234567"
+              href={BUSINESS_CONTACT.phoneHref}
               className="flex cursor-pointer items-start gap-3 font-body text-[#1F2937] transition hover:text-brand-forest"
             >
               <Icon name="phone" className="mt-0.5 h-5 w-5 shrink-0 text-brand-forest" strokeWidth={2} />
               <span>
-                <span className="font-semibold">Telefon:</span> +49 30 1234567
+                <span className="font-semibold">Telefon:</span> {BUSINESS_CONTACT.phoneDisplay}
               </span>
             </a>
             <p className="flex items-start gap-3 font-body text-[#1F2937]">

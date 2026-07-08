@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BUSINESS_CONTACT } from "@/lib/business";
 import { Section } from "../../components/atoms/Section";
 import { Typography } from "../../components/atoms/Typography";
 
@@ -32,9 +33,9 @@ export default function DatenschutzPage() {
                 <br />
                 Theodor-Heuss-Str. 11, 37075 Göttingen
                 <br />
-                E-Mail: hello@goereinigungsservice.de
+                E-Mail: {BUSINESS_CONTACT.email}
                 <br />
-                Telefon: +49 30 1234567
+                Telefon: {BUSINESS_CONTACT.phoneDisplay}
               </Typography>
             </section>
 
@@ -151,7 +152,7 @@ export default function DatenschutzPage() {
               </Typography>
               <Typography variant="bodyMuted">
                 Bei Fragen zum Datenschutz können Sie uns jederzeit unter
-                hello@goereinigungsservice.de kontaktieren.
+                {BUSINESS_CONTACT.email} kontaktieren.
               </Typography>
             </section>
           </div>

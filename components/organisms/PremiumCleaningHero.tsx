@@ -1,13 +1,20 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { Star } from "lucide-react";
+import { BUSINESS_CONTACT } from "@/lib/business";
 import { PHOTOS } from "@/lib/photos";
 import { useMotionSafe } from "@/lib/motion";
 import { Button } from "../atoms/Button";
 import { Icon, IconProps } from "../atoms/Icon";
+
+const HeroScene3D = dynamic(
+  () => import("./HeroScene3D").then((mod) => mod.HeroScene3D),
+  { ssr: false },
+);
 
 const trustIndicators: { icon: IconProps["name"]; text: string }[] = [
   { icon: "shield", text: "Verlässliche Qualität" },
@@ -23,18 +30,12 @@ const stats = [
 ];
 
 const particles = [
-  { left: "8%", top: "18%", duration: 3.2, delay: 0 },
-  { left: "22%", top: "72%", duration: 4.1, delay: 0.4 },
-  { left: "35%", top: "34%", duration: 3.8, delay: 0.8 },
-  { left: "48%", top: "58%", duration: 4.5, delay: 0.2 },
-  { left: "61%", top: "22%", duration: 3.5, delay: 1.1 },
-  { left: "74%", top: "68%", duration: 4.2, delay: 0.6 },
-  { left: "86%", top: "40%", duration: 3.9, delay: 1.4 },
-  { left: "92%", top: "82%", duration: 4.8, delay: 0.3 },
-  { left: "15%", top: "88%", duration: 3.6, delay: 0.9 },
-  { left: "55%", top: "12%", duration: 4.0, delay: 1.6 },
-  { left: "68%", top: "48%", duration: 3.3, delay: 0.5 },
-  { left: "40%", top: "78%", duration: 4.4, delay: 1.2 },
+  { left: "10%", top: "22%", duration: 4.1, delay: 0.2 },
+  { left: "28%", top: "70%", duration: 4.8, delay: 0.8 },
+  { left: "46%", top: "36%", duration: 4.5, delay: 0.4 },
+  { left: "67%", top: "64%", duration: 5.0, delay: 1.1 },
+  { left: "82%", top: "42%", duration: 4.3, delay: 1.5 },
+  { left: "58%", top: "16%", duration: 4.7, delay: 0.9 },
 ];
 
 export function PremiumCleaningHero() {
@@ -53,7 +54,8 @@ export function PremiumCleaningHero() {
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className={PHOTOS.hero.endsWith(".svg") ? "object-contain opacity-35" : "object-cover"}
+          unoptimized={PHOTOS.hero.endsWith(".svg")}
         />
         {!prefersReducedMotion ? (
           <motion.div
@@ -65,6 +67,14 @@ export function PremiumCleaningHero() {
           <div className="absolute inset-0 z-10 bg-gradient-to-tr from-brand-forest/25 via-transparent to-[#6EE7A8]/10 opacity-50" />
         )}
       </div>
+
+      {!prefersReducedMotion ? (
+        <div className="pointer-events-none absolute inset-0 z-[12]">
+          <div className="absolute right-0 top-0 h-full w-full opacity-55 lg:w-[52%]">
+            <HeroScene3D />
+          </div>
+        </div>
+      ) : null}
 
       {!prefersReducedMotion ? (
         <div className="pointer-events-none absolute inset-0 z-10">
@@ -111,15 +121,15 @@ export function PremiumCleaningHero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.25, duration: 0.7 }}
             >
-              <h1 className="font-display text-[2.25rem] font-bold leading-[1.1] tracking-[-0.02em] text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.45)] sm:text-5xl lg:text-6xl xl:text-[4.25rem]">
-                Perfektion in
+              <h1 className="font-display text-[2.25rem] font-bold leading-[1.1] tracking-[-0.02em] text-white drop-shadow-[0_2px_12px_rgba(0,0,0,0.45)] sm:text-5xl lg:text-6xl xl:text-[4.1rem]">
+                Professionelle Reinigung
                 <span className="mt-1 block text-[#B8F5CE] drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
-                  jedem Detail
+                  in Göttingen
                 </span>
               </h1>
               <p className="max-w-2xl font-body text-lg font-medium leading-[1.7] text-white drop-shadow-[0_1px_6px_rgba(0,0,0,0.5)] sm:text-xl">
-                Professionelle Reinigungslösungen für Zuhause und Büro in Göttingen – mit
-                persönlicher Betreuung, klaren Checklisten und konstanter Qualität.
+                Zuverlässige Reinigung für Privathaushalte und Büros: feste Ansprechpartner,
+                strukturierte Abläufe und sauber dokumentierte Ergebnisse.
               </p>
             </motion.div>
 
@@ -163,6 +173,20 @@ export function PremiumCleaningHero() {
                   </span>
                 </motion.div>
               ))}
+            </motion.div>
+
+            <motion.div
+              className="flex flex-col gap-2 rounded-xl border border-white/25 bg-[#0F2E24]/55 px-4 py-3 sm:max-w-xl sm:flex-row sm:items-center sm:justify-between"
+              initial={prefersReducedMotion ? false : { opacity: 0, y: 14 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.7, duration: 0.45 }}
+            >
+              <a href={BUSINESS_CONTACT.phoneHref} className="font-body text-sm font-semibold text-white/95">
+                {BUSINESS_CONTACT.phoneDisplay}
+              </a>
+              <a href={BUSINESS_CONTACT.emailHref} className="font-body text-sm text-white/90">
+                {BUSINESS_CONTACT.email}
+              </a>
             </motion.div>
           </motion.div>
 

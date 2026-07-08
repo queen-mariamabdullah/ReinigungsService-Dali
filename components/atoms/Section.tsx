@@ -1,4 +1,4 @@
-import { ReactNode } from "react";
+import { forwardRef, ReactNode } from "react";
 
 type SectionProps = {
   children: ReactNode;
@@ -7,17 +7,15 @@ type SectionProps = {
   id?: string;
 };
 
-export function Section({
-  children,
-  className = "",
-  containerClassName = "",
-  id,
-}: SectionProps) {
+export const Section = forwardRef<HTMLElement, SectionProps>(function Section(
+  { children, className = "", containerClassName = "", id },
+  ref,
+) {
   return (
-    <section id={id} className={`py-16 md:py-24 ${className}`.trim()}>
+    <section ref={ref} id={id} className={`py-16 md:py-24 ${className}`.trim()}>
       <div className={`mx-auto w-full max-w-7xl px-4 md:px-6 ${containerClassName}`.trim()}>
         {children}
       </div>
     </section>
   );
-}
+});

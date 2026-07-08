@@ -1,16 +1,19 @@
 /**
- * Licensed stock photos from Unsplash (free commercial use).
- * Local SVG assets in /public are used as reliable fallbacks.
+ * Branded local illustrations in /public — reliable in dev and production.
+ * Optional Unsplash URLs via NEXT_PUBLIC_USE_REMOTE_PHOTOS=true.
  * @see https://unsplash.com/license
  */
 const unsplash = (id: string, width: number) =>
   `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${width}&q=85`;
 
+const useRemotePhotos = process.env.NEXT_PUBLIC_USE_REMOTE_PHOTOS === "true";
+
 export const PHOTO_LICENSE = {
-  provider: "Unsplash",
+  provider: useRemotePhotos ? "Unsplash" : "Eigene Markenillustrationen",
   licenseUrl: "https://unsplash.com/license",
-  notice:
-    "Website-Bilder stammen von Unsplash und dürfen gemäß Unsplash License kostenlos genutzt werden.",
+  notice: useRemotePhotos
+    ? "Website-Bilder stammen von Unsplash und dürfen gemäß Unsplash License kostenlos genutzt werden."
+    : "Website-Bilder sind markenspezifische Illustrationen aus diesem Projekt.",
 } as const;
 
 export const LOCAL_ASSETS = {
@@ -23,7 +26,7 @@ export const LOCAL_ASSETS = {
   },
 } as const;
 
-export const PHOTOS = {
+const REMOTE_PHOTOS = {
   hero: unsplash("photo-1581578731548-c64695cc6952", 1600),
   about: unsplash("photo-1600880292203-757bb62b4baf", 1400),
   contact: unsplash("photo-1556761175-b413da4baf72", 1200),
@@ -40,15 +43,34 @@ export const PHOTOS = {
   },
 } as const;
 
+const LOCAL_PHOTOS = {
+  hero: LOCAL_ASSETS.hero,
+  about: LOCAL_ASSETS.hero,
+  contact: LOCAL_ASSETS.contact,
+  contactIntro: LOCAL_ASSETS.contact,
+  services: LOCAL_ASSETS.services,
+  blog: {
+    freshHome: LOCAL_ASSETS.services.home,
+    officeHygiene: LOCAL_ASSETS.services.office,
+    deepWhen: LOCAL_ASSETS.services.deep,
+  },
+} as const;
+
+export const PHOTOS = useRemotePhotos ? REMOTE_PHOTOS : LOCAL_PHOTOS;
+
 export const PHOTO_FALLBACKS: Record<string, string> = {
-  [PHOTOS.hero]: LOCAL_ASSETS.hero,
-  [PHOTOS.about]: LOCAL_ASSETS.hero,
-  [PHOTOS.contact]: LOCAL_ASSETS.contact,
-  [PHOTOS.contactIntro]: LOCAL_ASSETS.contact,
-  [PHOTOS.services.home]: LOCAL_ASSETS.services.home,
-  [PHOTOS.services.office]: LOCAL_ASSETS.services.office,
-  [PHOTOS.services.deep]: LOCAL_ASSETS.services.deep,
-  [PHOTOS.blog.freshHome]: LOCAL_ASSETS.services.home,
-  [PHOTOS.blog.officeHygiene]: LOCAL_ASSETS.services.office,
-  [PHOTOS.blog.deepWhen]: LOCAL_ASSETS.services.deep,
+  [REMOTE_PHOTOS.hero]: LOCAL_ASSETS.hero,
+  [REMOTE_PHOTOS.about]: LOCAL_ASSETS.hero,
+  [REMOTE_PHOTOS.contact]: LOCAL_ASSETS.contact,
+  [REMOTE_PHOTOS.contactIntro]: LOCAL_ASSETS.contact,
+  [REMOTE_PHOTOS.services.home]: LOCAL_ASSETS.services.home,
+  [REMOTE_PHOTOS.services.office]: LOCAL_ASSETS.services.office,
+  [REMOTE_PHOTOS.services.deep]: LOCAL_ASSETS.services.deep,
+  [REMOTE_PHOTOS.blog.freshHome]: LOCAL_ASSETS.services.home,
+  [REMOTE_PHOTOS.blog.officeHygiene]: LOCAL_ASSETS.services.office,
+  [REMOTE_PHOTOS.blog.deepWhen]: LOCAL_ASSETS.services.deep,
 };
+
+export function isRemotePhoto(src: string) {
+  return src.startsWith("http://") || src.startsWith("https://");
+}
